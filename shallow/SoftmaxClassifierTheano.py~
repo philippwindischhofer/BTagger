@@ -1,0 +1,135 @@
+
+# coding: utf-8
+
+# In[ ]:
+
+from __future__ import division
+from keras.models import Sequential
+from keras.layers import Dense, Activation
+from keras.callbacks import EarlyStopping
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# In[ ]:
+
+# start loading the data:
+TRAINING_DATASET = "/shome/phwindis/data/training_data.csv"
+VALIDATION_DATASET = "/shome/phwindis/data/validation_data.csv"
+raw_data = pd.read_csv(TRAINING_DATASET, names = ['Jet_CSV', 'Jet_CSVIVF', 'Jet_JP', 'Jet_JBP','Jet_cMVA', 'Jet_flavour_class'])
+raw_data_validation = pd.read_csv(VALIDATION_DATASET, names = ['Jet_CSV', 'Jet_CSVIVF', 'Jet_JP', 'Jet_JBP','Jet_cMVA', 'Jet_flavour_class'])
+
+
+# In[ ]:
+
+# get only the feature columns
+training_in = raw_data.loc[:,['Jet_CSV', 'Jet_CSVIVF', 'Jet_JP', 'Jet_JBP']].copy()
+validation_in = raw_data_validation.loc[:,['Jet_CSV', 'Jet_CSVIVF', 'Jet_JP', 'Jet_JBP']].copy()
+
+
+# In[ ]:
+
+cols = ['light', 'charm', 'bhad', 'gluon']
+training_out = pd.DataFrame(0, index = np.arange(0, len(raw_data.index)), columns = cols)
+validation_out = pd.DataFrame(0, index = np.arange(0, len(raw_data_validation.index)), columns = cols)
+
+
+# In[ ]:
+
+def makeOneHot(data):
+    data.loc[raw_data['Jet_flavour_class'] == 0, 'light'] = 1
+    data.loc[raw_data['Jet_flavour_class'] == 1, 'charm'] = 1
+    data.loc[raw_data['Jet_flavour_class'] == 2, 'bhad'] = 1
+    data.loc[raw_data['Jet_flavour_class'] == 3, 'gluon'] = 1
+
+
+# In[ ]:
+
+makeOneHot(training_out)
+makeOneHot(validation_out)
+
+
+# In[ ]:
+
+# build here the keras model (4 inputs, 4 outputs)
+def simple_classifier():
+    model = Sequential()
+    model.add(Dense(14, input_dim = 4, init = 'normal', activation = 'relu'))
+    model.add(Dense(4, init = 'normal', activation = 'softmax'))
+    model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
+    return model
+
+
+# In[ ]:
+
+model = simple_classifier()
+
+
+# In[ ]:
+
+early_stop = EarlyStopping(monitor = 'val_loss', patience = 10, verbose = 0, mode = 'auto')
+
+
+# In[ ]:
+
+model.fit(training_in.as_matrix(), training_out.as_matrix(), nb_epoch = 10, batch_size = 10, validation_data=(validation_in.as_matrix(), validation_out.as_matrix()), callbacks = [early_stop])
+
+
+# In[ ]:
+
+# save the trained model:
+model.save('model.h5')
+
+
+# In[ ]:
+
+classifier_out = model.predict(validation_in.as_matrix(), batch_size = 32)
+
+
+# In[ ]:
+
+raw_data_validation['NN_classifier'] = classifier_out[:,2]
+
+
+# In[ ]:
+
+raw_data_validation['random_classifier'] = np.random.rand(len(raw_data.index))
+
+
+# In[ ]:
+
+jet_algorithms = ["Jet_CSV", "Jet_CSVIVF", "Jet_JP", "random_classifier","Jet_cMVA", "NN_classifier"]
+# plot the ROC curves
+fig = plt.figure(figsize=(10,6))
+
+b_jets = raw_data_validation.loc[raw_data_validation['Jet_flavour_class'] == 2]
+non_b_jets = raw_data_validation.loc[(raw_data_validation['Jet_flavour_class'] != 2)]
+
+for algorithm in jet_algorithms:
+    efficiency = np.array([])
+    misid_prob = np.array([])
+    
+    minval = np.min(raw_data_validation[algorithm])
+    maxval = np.max(raw_data_validation[algorithm])
+    for threshold in np.arange(minval, maxval, (maxval - minval) / 300):    
+        correct_b = b_jets.loc[b_jets[algorithm] >= threshold]
+        misid_b = non_b_jets.loc[non_b_jets[algorithm] >= threshold]
+        
+        if(len(correct_b) > 1 and len(misid_b) > 1):
+            efficiency = np.append(efficiency, len(correct_b) / len(b_jets))
+            misid_prob = np.append(misid_prob, len(misid_b) / len(non_b_jets))
+    plt.yscale('log')
+    plt.plot(efficiency, misid_prob, label = algorithm)
+axes = plt.gca()
+axes.set_ylim([1e-2,1])
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+plt.xlabel('b jet efficiency')
+plt.ylabel('misidentification prob.')
+plt.show()
+
+
+# In[ ]:
+
+
+

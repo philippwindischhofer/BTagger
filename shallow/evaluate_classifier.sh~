@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source /shome/phwindis/setup_env
+

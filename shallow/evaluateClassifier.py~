@@ -1,0 +1,46 @@
+
+# In[ ]:
+
+classifier_out = model.predict(validation_in.as_matrix(), batch_size = 32)
+
+
+# In[ ]:
+
+raw_data_validation['NN_classifier'] = classifier_out[:,2]
+
+
+# In[ ]:
+
+raw_data_validation['random_classifier'] = np.random.rand(len(raw_data.index))
+
+
+# In[ ]:
+
+jet_algorithms = ["Jet_CSV", "Jet_CSVIVF", "Jet_JP", "random_classifier","Jet_cMVA", "NN_classifier"]
+# plot the ROC curves
+fig = plt.figure(figsize=(10,6))
+
+b_jets = raw_data_validation.loc[raw_data_validation['Jet_flavour_class'] == 2]
+non_b_jets = raw_data_validation.loc[(raw_data_validation['Jet_flavour_class'] != 2)]
+
+for algorithm in jet_algorithms:
+    efficiency = np.array([])
+    misid_prob = np.array([])
+    
+    minval = np.min(raw_data_validation[algorithm])
+    maxval = np.max(raw_data_validation[algorithm])
+    for threshold in np.arange(minval, maxval, (maxval - minval) / 300):    
+        correct_b = b_jets.loc[b_jets[algorithm] >= threshold]
+        misid_b = non_b_jets.loc[non_b_jets[algorithm] >= threshold]
+        
+        if(len(correct_b) > 1 and len(misid_b) > 1):
+            efficiency = np.append(efficiency, len(correct_b) / len(b_jets))
+            misid_prob = np.append(misid_prob, len(misid_b) / len(non_b_jets))
+    plt.yscale('log')
+    plt.plot(efficiency, misid_prob, label = algorithm)
+axes = plt.gca()
+axes.set_ylim([1e-2,1])
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+plt.xlabel('b jet efficiency')
+plt.ylabel('misidentification prob.')
+plt.show()
