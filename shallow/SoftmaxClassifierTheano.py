@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 def simple_classifier():
     model = Sequential()
     model.add(Dense(24, input_dim = 4, init = 'normal', activation = 'relu'))
+    model.add(Dense(24, input_dim = 24, init = 'normal', activation = 'relu'))
+    model.add(Dense(24, input_dim = 24, init = 'normal', activation = 'relu'))
     model.add(Dense(4, init = 'normal', activation = 'softmax'))
     model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
     return model
