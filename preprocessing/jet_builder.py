@@ -22,15 +22,21 @@ def main(argv):
     # read next chunk of jet data
     while(read_pos_jets < 10):
         print "reading jet chunk from " + jets_in ": (" + str(read_pos_jets) + ", " + str(read_pos_jets + chunk_size_jets) + ")"
-
         d1 = pd.DataFrame(rnpy.root2array(jets_in, treename = "tagVars/ttree", start = read_pos_jets, stop = read_pos_jets + chunk_size_jets))
-        read_pos_jets += chunk_size_jets
-        last_jet_index = (int)(t1.tail(1).iloc[0])
+
+        # get the last jet index that is contained here
+        last_jet = d1.tail(1)['Jet_jetIndex'].iloc[0]
 
         print "reading tracks from" + tracks_in + ": (" + str(read_pos_tracks) + ", " + str(read_pos_tracks + chunk_size_tracks) + ")"
 
         d2 = pd.DataFrame(rnpy.root2array(tracks_in, treename = "tagVars/ttree_track", start = read_pos_tracks, stop = read_pos_tracks + chunk_size_tracks))
-        read_pos_tracks += read_pos_tracks
+        # jet index of the last jet that is completely contained in this chunk
+        last_tracks = (int)(d2.tail(1)['Track_jetIndex'].iloc[0] - 1)
+
+        # determine the positions of the last jet tracks and last jet in both files
+        # this gives the positions where the next chunk should start
+        read_pos_jets += (d1.loc[d1['Jet_jetIndex'] == last_tracks].index[-1] + 1)
+        read_pos_tracks += (d2.loc[d2['Track_jetIndex'] == last_tracks].index[-1] + 1)
 
         d1['track_data'] = pd.np.empty((len(d1.index), 0)).tolist()
 
@@ -40,8 +46,9 @@ def main(argv):
             # these are the track data of the current track:
             tracks = row[["Track_pt", "Track_eta", "Track_phi", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
             jet_index = int(row["Track_jetIndex"])
-            if jet_index > last_jet_index:
-                # fetch new chunk of jet list here
+            if jet_index > last_tracks:
+                # have reached the end of the prepared data, go and fetch new chunk of jet list here
+                break
 
             table_index = d1.loc[d1['Jet_jetIndex'] == jet_index].index[0]
     
