@@ -48,6 +48,10 @@ def main(argv):
 
 
         plt.plot(efficiency, misid_prob, label = algorithm)
+        plotdata = np.vstack([misid_prob, efficiency])
+        path = argv[1] + algorithm + ".np"
+        np.save(path, plotdata)
+
     plt.yscale('log')
     axes = plt.gca()
     axes.set_ylim([1e-2,1])
