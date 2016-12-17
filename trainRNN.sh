@@ -8,6 +8,9 @@ export OMP_NUM_THREADS=1
 export NUMEXPR_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 
+# for local testing
+JOB_ID=local2
+
 # for saving the output
 OUTDIR=$HOME/DeepTagger/RNN_out/${JOB_ID}
 echo $OUTDIR

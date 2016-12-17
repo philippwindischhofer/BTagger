@@ -21,7 +21,7 @@ from keras.layers import LSTM
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(32, input_shape = (None, 8)))
+    model.add(LSTM(64, input_shape = (None, 8)))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
     model.add(Dense(1, activation='sigmoid'))
@@ -32,22 +32,33 @@ def RNN_classifier():
 
 # In[22]:
 
-def prepare_training_data(jet_list, label):
+def prepare_training_data(jet_list, label, set_tracks):
     # extract the tracks and put them in pt-order, hardest tracks first
     jet_tracks = [cur[-1] for cur in jet_list]
     jet_tracks = [sorted(cur, key = lambda tracks: tracks[0], reverse = True) for cur in jet_tracks]
     
     # zero-pad the track dimension, to make sure all jets fed into the network during training have the same length
     max_tracks = max([len(cur) for cur in jet_tracks])
-    padded = [np.vstack([cur, np.full((max_tracks - len(cur), 8), 0, float)]) for cur in jet_tracks]
+    padded = [np.vstack([cur, np.full((set_tracks - len(cur), 8), 0, float)]) for cur in jet_tracks]
     
     batch_size = len(padded)
-    timestep_size = max_tracks
+    timestep_size = set_tracks
     jet_dim = 8
     x_train = np.array(padded).reshape(batch_size, timestep_size, jet_dim)
     y_train = np.full((batch_size, 1), label, float) # all are b-jets!
     
     return x_train, y_train, batch_size
+
+def get_max_tracks(jets_b, jets_l, jets_c):
+    b_tracks = [cur[-1] for cur in jets_b]
+    l_tracks = [cur[-1] for cur in jets_l]
+    c_tracks = [cur[-1] for cur in jets_c]
+    
+    max_tracks_b = max([len(cur) for cur in b_tracks])
+    max_tracks_l = max([len(cur) for cur in l_tracks])
+    max_tracks_c = max([len(cur) for cur in c_tracks])
+    
+    return np.max([max_tracks_b, max_tracks_l, max_tracks_c])
 
 def main(argv):
     # In[23]:
@@ -57,7 +68,7 @@ def main(argv):
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
-    chunks_limit = 2000000
+    chunks_limit = 50
 
 
     # In[24]:
@@ -68,12 +79,13 @@ def main(argv):
     # In[25]:
 
     while number_chunks < chunks_limit:
+        print("chunk number " + str(number_chunks))
         number_chunks += 1
     
         # read in new chunk of jet and track data
-        d1 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_0_out.root",
+        d1 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_17_out.root",
                                           treename = "tagVars/ttree", start = read_pos_jets, stop = read_pos_jets + batch_size_jets))
-        d2 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_0_out.root",
+        d2 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_17_out.root",
                                           treename = "tagVars/ttree_track", start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks))
     
         # break if we reached the end of the file
@@ -138,20 +150,30 @@ def main(argv):
             # add the new jet to the list, if it contains any resolved tracks
             if len(row["track_data"]) > 0:
                 jets += [(row["Jet_pt"], row["Jet_eta"], row["Jet_phi"], row["Jet_mass"], flavour, row["track_data"])]
-        
-        # now, have sorted jets in three lists, can use them directly for training!
-        x_train_b, y_train_b, batch_size_b = prepare_training_data(jets_b, 1)
-        x_train_c, y_train_c, batch_size_c = prepare_training_data(jets_c, 0)
-        x_train_l, y_train_l, batch_size_l = prepare_training_data(jets_l, 0)
-        model.fit(x_train_b, y_train_b, batch_size = batch_size_b, nb_epoch = 25)
-        model.fit(x_train_c, y_train_c, batch_size = batch_size_c, nb_epoch = 25)
-        model.fit(x_train_l, y_train_l, batch_size = batch_size_l, nb_epoch = 25)
 
+        print("prepare data")
+        max_tracks = get_max_tracks(jets_b, jets_c, jets_l)
+        # now, have sorted jets in three lists, can use them directly for training!
+        x_train_b, y_train_b, batch_size_b = prepare_training_data(jets_b, 1, max_tracks)
+        x_train_c, y_train_c, batch_size_c = prepare_training_data(jets_c, 0, max_tracks)
+        x_train_l, y_train_l, batch_size_l = prepare_training_data(jets_l, 0, max_tracks)
+        x_train = np.vstack([x_train_b, x_train_c, x_train_l])
+        y_train = np.vstack([y_train_b, y_train_c, y_train_l])
+        #model.fit(x_train_b, y_train_b, batch_size = batch_size_b, nb_epoch = 25)
+        #model.fit(x_train_c, y_train_c, batch_size = batch_size_c, nb_epoch = 10)
+        #model.fit(x_train_l, y_train_l, batch_size = batch_size_l, nb_epoch = 10)
+
+        print("start training")
+        model.fit(x_train, y_train, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)
+
+        MODEL_OUT = argv[0] + '/model-' + str(number_chunks) + '.h5'
+        print("saving fitted model to " + MODEL_OUT)
+        model.save(MODEL_OUT)
 
     # In[26]:
 
     # save the model after training here
-    MODEL_OUT = argv[0] + '/model.h5'
+    MODEL_OUT = argv[0] + '/model-final.h5'
     print("saving fitted model to " + MODEL_OUT)
     model.save(MODEL_OUT)
 
