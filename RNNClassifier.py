@@ -63,8 +63,8 @@ def get_max_tracks(jets_b, jets_l, jets_c):
 def main(argv):
     # In[23]:
 
-    batch_size_jets = 12000
-    batch_size_tracks = 52000
+    batch_size_jets = 1200
+    batch_size_tracks = 5200
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
