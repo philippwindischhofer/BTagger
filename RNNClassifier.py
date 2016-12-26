@@ -83,6 +83,7 @@ def main(argv):
         number_chunks += 1
     
         # read in new chunk of jet and track data
+        
         d1 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_17_out.root",
                                           treename = "tagVars/ttree", start = read_pos_jets, stop = read_pos_jets + batch_size_jets))
         d2 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_17_out.root",
