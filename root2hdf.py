@@ -16,15 +16,13 @@ def main(argv):
 
     print("importing jet list")
     # read in new chunk of jet and track data
-    d1 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_0_out.root",
-                                          treename = "tagVars/ttree"))
+    d1 = pd.DataFrame(rnpy.root2array(argv[0], treename = "tagVars/ttree"))
     
     print("importing tracks list")
-    d2 = pd.DataFrame(rnpy.root2array("/mnt/t3nfs01/data01/shome/jpata/btv/gc/TagVarExtractor/GCa08e5e237323/TT_TuneCUETP8M1_13TeV-powheg-pythia8/job_0_out.root",
-                                          treename = "tagVars/ttree_track"))
+    d2 = pd.DataFrame(rnpy.root2array(argv[0], treename = "tagVars/ttree_track"))
 
     print("creating HDF5")
-    store = pd.HDFStore("/shome/phwindis/0.h5")
+    store = pd.HDFStore(argv[1])
     print("writing jets")
     store.put('jets', d1, format = 'table')
     print("writing tracks")
