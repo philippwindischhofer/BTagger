@@ -17,4 +17,4 @@ echo $OUTDIR
 mkdir -p $OUTDIR
 
 # write all output files back here
-python /shome/phwindis/DeepTagger/RNNClassifier-HDF.py `echo "$OUTDIR"`
+python -m cProfile /shome/phwindis/DeepTagger/RNNClassifier-HDF.py `echo "$OUTDIR"`
