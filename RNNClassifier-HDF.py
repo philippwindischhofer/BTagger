@@ -5,12 +5,8 @@
 
 from __future__ import division
 import sys
-import ROOT
-import root_numpy as rnpy
 import pandas as pd
 import numpy as np
-import seaborn
-import pickle
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 from keras.layers import LSTM
@@ -83,10 +79,10 @@ def main(argv):
         number_chunks += 1
     
         # read in new chunk of jet and track data
-        d1 = pd.read_hdf('../0.h5', key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
+        d1 = pd.read_hdf('/scratch/snx3000/phwindis/0.h5', key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
         d1 = d1.reset_index(drop=True)
     
-        d2 = pd.read_hdf('../0.h5', key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
+        d2 = pd.read_hdf('/scratch/snx3000/phwindis/0.h5', key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
         d2 = d2.reset_index(drop=True)        
 
         # break if we reached the end of the file
