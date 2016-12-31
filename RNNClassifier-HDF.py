@@ -78,11 +78,14 @@ def main(argv):
         print("chunk number " + str(number_chunks))
         number_chunks += 1
     
+        datafile = '/shome/phwindis/0.h5'
+        #datafile = '/scratch/snx3000/phwindis/0.h5'
+
         # read in new chunk of jet and track data
-        d1 = pd.read_hdf('/scratch/snx3000/phwindis/0.h5', key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
+        d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
         d1 = d1.reset_index(drop=True)
     
-        d2 = pd.read_hdf('/scratch/snx3000/phwindis/0.h5', key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
+        d2 = pd.read_hdf(datafile, key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
         d2 = d2.reset_index(drop=True)        
 
         # break if we reached the end of the file
