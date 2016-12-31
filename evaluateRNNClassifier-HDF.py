@@ -77,8 +77,9 @@ def main(argv):
         number_chunks += 1
 
         datafile = '/scratch/snx3000/phwindis/10.h5'
-    
+        
         # read in new chunk of jet and track data
+        print("loading valudation data")
         d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
         d1 = d1.reset_index(drop=True)
     
@@ -89,6 +90,7 @@ def main(argv):
         last_tracks = (int)(d2.tail(1)['Track_jetIndex'].iloc[0]-1)
         last_jet = (int)(d1.tail(1)['Jet_jetIndex'].iloc[0]-1)
     
+        print("assembling jets")
         # find the latest jet index thatis fully contained in this chunk
         while(len(d2.loc[d2['Track_jetIndex'] == last_tracks]) == 0):
             last_tracks -= 1
@@ -119,6 +121,7 @@ def main(argv):
         jets_l = []
         jets_c = []
 
+        print("sorting jets")
         # iterate over the jet list, with already matched tracks
         for irow, row in d1.iterrows():
             jet_index = int(row["Jet_jetIndex"])
@@ -152,12 +155,14 @@ def main(argv):
         # In[7]:
 
         # get the model's response and sort it into b and non-b
+        print("evaluating the model")
         response_b = model.predict(x_validation_b, batch_size = batch_size_b)
         response_c = model.predict(x_validation_c, batch_size = batch_size_c)
         response_l = model.predict(x_validation_l, batch_size = batch_size_l)
         response_nb = np.vstack([response_c, response_l])
 
         # same for cMVA
+        print("evaluating cMVA")
         response_b_cmva = np.array([cur[0] for cur in jets_b])
         response_nb_cmva = np.array([cur[0] for cur in non_b_jets])
         RNN_misid, RNN_efficiency = build_roc(response_b, response_nb)
@@ -167,6 +172,7 @@ def main(argv):
 
         # In[9]:
 
+        print("plotting...")
         fig = plt.figure(figsize=(10,6))
         plt.plot(RNN_efficiency, RNN_misid, label = "LSTM")
         plt.plot(cMVA_misid, cMVA_efficiency, label = "cMVA")
@@ -180,7 +186,7 @@ def main(argv):
         # In[10]:
 
         # can now plot the curve and save the values to a file
-        plotdata = np.vstack([misid_prob, efficiency])
+        plotdata = np.vstack([RNN_misid, RNN_efficiency])
         np.save(argv[1], plotdata)
 
 if __name__ == "__main__":
