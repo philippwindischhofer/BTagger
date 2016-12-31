@@ -7,10 +7,12 @@ from __future__ import division
 import sys
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Activation
 from keras.layers import LSTM
-
 
 # In[2]:
 
@@ -32,6 +34,23 @@ def prepare_training_data(jet_list, label):
     
     return x_train, y_train, batch_size
 
+def build_roc(response_b, response_nb):
+    # produce the ROC plot and save it so that it can be combined with the others
+    efficiency = np.array([])
+    misid_prob = np.array([])
+
+    # find the optimal threshold values for the plotting
+    minval = np.min(np.concatenate([response_nb, response_b]))
+    maxval = np.max(np.concatenate([response_nb, response_b]))
+    for threshold in np.arange(minval, maxval, (maxval - minval) / 1000):
+        correct_b = (response_b >= threshold).sum()
+        misid_b = (response_nb >= threshold).sum()
+            
+        if(correct_b > 1 and misid_b > 1):
+            efficiency = np.append(efficiency, correct_b / len(response_b))
+            misid_prob = np.append(misid_prob, misid_b / len(response_nb))
+
+    return misid_prob, efficiency
 
 # In[3]:
 
@@ -118,17 +137,17 @@ def main(argv):
 
             # add the new jet to the list, if it contains tracks
             if len(row["track_data"]) > 0:
-                jets += [(row["Jet_pt"], row["Jet_eta"], row["Jet_phi"], row["Jet_mass"], flavour, row["track_data"])]
+                jets += [(row["Jet_cMVA"], row["Jet_pt"], row["Jet_eta"], row["Jet_phi"], row["Jet_mass"], flavour, row["track_data"])]
         
         # now, have sorted jets in three lists, can use them directly for training!
-
+        non_b_jets = jets_c + jets_l
+        all_jets = non_b_jets + jets_b
 
         # In[6]:
 
         x_validation_b, _, batch_size_b = prepare_training_data(jets_b, 1)
         x_validation_c, _, batch_size_c = prepare_training_data(jets_c, 0)
         x_validation_l, _, batch_size_l = prepare_training_data(jets_l, 0)
-
 
         # In[7]:
 
@@ -138,35 +157,25 @@ def main(argv):
         response_l = model.predict(x_validation_l, batch_size = batch_size_l)
         response_nb = np.vstack([response_c, response_l])
 
-
+        # same for cMVA
+        response_b_cmva = np.array([cur[0] for cur in jets_b])
+        response_nb_cmva = np.array([cur[0] for cur in non_b_jets])
+        RNN_misid, RNN_efficiency = build_roc(response_b, response_nb)
+        cMVA_misid, cMVA_efficiency = build_roc(response_b_cmva, response_nb_cmva)
+        
         # In[8]:
-
-        # produce the ROC plot and save it so that it can be combined with the others
-        efficiency = np.array([])
-        misid_prob = np.array([])
-
-        # find the optimal threshold values for the plotting
-        minval = np.min(np.concatenate([response_nb, response_b]))
-        maxval = np.max(np.concatenate([response_nb, response_b]))
-        for threshold in np.arange(minval, maxval, (maxval - minval) / 1000):
-            correct_b = (response_b >= threshold).sum()
-            misid_b = (response_nb >= threshold).sum()
-    
-            if(correct_b > 1 and misid_b > 1):
-                efficiency = np.append(efficiency, correct_b / len(response_b))
-                misid_prob = np.append(misid_prob, misid_b / len(response_nb))
 
         # In[9]:
 
-        #fig = plt.figure(figsize=(10,6))
-        #plt.plot(efficiency, misid_prob)
-        #plt.yscale('log')
-        #axes = plt.gca()
-        #axes.set_ylim([1e-2,1])
-        #plt.xlabel('b jet efficiency')
-        #plt.ylabel('misidentification prob.')
-        #plt.show()
-
+        fig = plt.figure(figsize=(10,6))
+        plt.plot(RNN_efficiency, RNN_misid, label = "LSTM")
+        plt.plot(cMVA_misid, cMVA_efficiency, label = "cMVA")
+        plt.yscale('log')
+        axes = plt.gca()
+        axes.set_ylim([1e-2,1])
+        plt.xlabel('b jet efficiency')
+        plt.ylabel('misidentification prob.')
+        fig.savefig(argv[1] + '-plot.pdf')
 
         # In[10]:
 
