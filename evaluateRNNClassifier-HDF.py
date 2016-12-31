@@ -63,8 +63,8 @@ def main(argv):
     # In[4]:
 
     # load a batch of validation data
-    batch_size_jets = 12000
-    batch_size_tracks = 52000
+    batch_size_jets = 120000
+    batch_size_tracks = 520000
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
@@ -79,7 +79,7 @@ def main(argv):
         datafile = '/scratch/snx3000/phwindis/10.h5'
         
         # read in new chunk of jet and track data
-        print("loading valudation data")
+        print("loading validation data")
         d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
         d1 = d1.reset_index(drop=True)
     
@@ -175,13 +175,25 @@ def main(argv):
         print("plotting...")
         fig = plt.figure(figsize=(10,6))
         plt.plot(RNN_efficiency, RNN_misid, label = "LSTM")
-        plt.plot(cMVA_misid, cMVA_efficiency, label = "cMVA")
+        plt.plot(cMVA_efficiency, cMVA_misid, label = "cMVA")
         plt.yscale('log')
         axes = plt.gca()
         axes.set_ylim([1e-2,1])
         plt.xlabel('b jet efficiency')
         plt.ylabel('misidentification prob.')
+        plt.legend(loc = "upper left")
         fig.savefig(argv[1] + '-plot.pdf')
+
+        fig = plt.figure(figsize=(10,6))
+        plt.scatter(response_b_cmva, response_b, color = 'g', s = 2, label = "b jets")
+        plt.scatter(response_nb_cmva, response_nb, color = 'r', s = 2, label = "non b jets")
+        axes = plt.gca()
+        axes.set_ylim([-0.1,1])
+        axes.set_xlim([-1,1])
+        plt.legend(loc = "lower left")
+        plt.xlabel('cMVA output')
+        plt.ylabel('LSTM output')
+        plt.savefig(argv[1] + '-scatter.pdf')
 
         # In[10]:
 

@@ -7,6 +7,9 @@ from __future__ import division
 import sys
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from keras.models import Sequential
 from keras.layers import Dense, Activation
 from keras.layers import LSTM
@@ -17,7 +20,9 @@ from keras.layers import LSTM
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(64, input_shape = (None, 8)))
+    model.add(LSTM(64, return_sequences = True, input_shape = (None, 8)))
+    model.add(LSTM(64, return_sequences = True))
+    model.add(LSTM(64))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
     model.add(Dense(1, activation='sigmoid'))
@@ -25,6 +30,10 @@ def RNN_classifier():
   
     return model
 
+def shuffle_synchronized(a, b):
+    assert len(a) == len(b)
+    p = np.random.permutation(len(a))
+    return a[p], b[p]
 
 # In[22]:
 
@@ -64,11 +73,14 @@ def main(argv):
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
-    chunks_limit = 5
+    chunks_limit = 35
 
     # In[24]:
 
     model = RNN_classifier()
+
+    loss_history = []
+    loss_val_history = []
 
     # In[25]:
 
@@ -161,14 +173,28 @@ def main(argv):
         #model.fit(x_train_c, y_train_c, batch_size = batch_size_c, nb_epoch = 10)
         #model.fit(x_train_l, y_train_l, batch_size = batch_size_l, nb_epoch = 10)
 
+        x_train, y_train = shuffle_synchronized(x_train, y_train)
+
         print("start training")
-        model.fit(x_train, y_train, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)
+        epoch_history = model.fit(x_train, y_train, validation_split = 0.20, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)
+
+        # update loss histories:
+        loss_history.append(epoch_history.history['loss'])
+        loss_val_history.append(epoch_history.history['val_loss'])
 
         MODEL_OUT = argv[0] + '/model-' + str(number_chunks) + '.h5'
         print("saving fitted model to " + MODEL_OUT)
         model.save(MODEL_OUT)
 
     # In[26]:
+    # process the training and validation loss histories
+    fig = plt.figure(figsize=(10,6))
+    plt.plot(np.reshape(loss_history, np.size(loss_history)), label = "training loss")
+    plt.plot(np.reshape(loss_val_history, np.size(loss_val_history)), label = "validation loss")
+    plt.xlabel("epoch")
+    plt.ylabel("loss")
+    plt.legend()
+    plt.savefig(argv[0] + '/loss-history.pdf')
 
     # save the model after training here
     MODEL_OUT = argv[0] + '/model-final.h5'
