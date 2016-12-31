@@ -5,13 +5,8 @@
 
 from __future__ import division
 import sys
-import ROOT
-import root_numpy as rnpy
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
-import seaborn
-import pickle
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Activation
 from keras.layers import LSTM
@@ -61,12 +56,14 @@ def main(argv):
 
     while number_chunks < chunks_limit:
         number_chunks += 1
+
+        datafile = '/scratch/snx3000/phwindis/10.h5'
     
         # read in new chunk of jet and track data
-        d1 = pd.read_hdf('../0.h5', key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
+        d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
         d1 = d1.reset_index(drop=True)
     
-        d2 = pd.read_hdf('../0.h5', key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
+        d2 = pd.read_hdf(datafile, key = 'tracks', start = read_pos_tracks, stop = read_pos_tracks + batch_size_tracks)
         d2 = d2.reset_index(drop=True)
     
         # figure out where the next chunk should start so that we don't count any jets multiple times

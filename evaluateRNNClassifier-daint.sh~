@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "Go to scratch"
-#cd $SCRATCH
+# source /shome/phwindis/setup_env
+
+MODEL_DIR="$1"
 
 echo "Prepare modules"
 module load daint-gpu
@@ -17,16 +18,4 @@ export LIBRARY_PATH=$CUDNN_BASE/lib64:$LD_LIBRARY_PATH
 # avoid lock-issues 
 export THEANO_FLAGS="mode=FAST_RUN,device=gpu,lib.cnmem=1,floatX=float32,base_compiledir=$SCRATCH/theano.NOBACKUP"
 
-echo "Go back home"
-JOB_ID=lstm64
-JOB_DESC="try to setup the toolchain & reproduce the earlier results from T3"
-OUTDIR=$HOME/BTagger/RNN_out/${JOB_ID}
-mkdir -p $OUTDIR
-echo $OUTDIR
-echo $JOB_DESC
-echo $JOB_DESC > $OUTDIR/desc.txt
-
-echo "Starting TrainClassifiers.py"
-
-#python -m cProfile /users/phwindis/BTagger/RNNClassifier-HDF.py `echo "$OUTDIR"` &> log.txt
-python /users/phwindis/BTagger/RNNClassifier-HDF.py `echo "$OUTDIR"` > $OUTDIR/log.txt
+python ./evaluateRNNClassifier-HDF.py $MODEL_DIR/model.h5 $MODEL_DIR/ROC

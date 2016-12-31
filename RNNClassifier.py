@@ -160,9 +160,6 @@ def main(argv):
         x_train_l, y_train_l, batch_size_l = prepare_training_data(jets_l, 0, max_tracks)
         x_train = np.vstack([x_train_b, x_train_c, x_train_l])
         y_train = np.vstack([y_train_b, y_train_c, y_train_l])
-        #model.fit(x_train_b, y_train_b, batch_size = batch_size_b, nb_epoch = 25)
-        #model.fit(x_train_c, y_train_c, batch_size = batch_size_c, nb_epoch = 10)
-        #model.fit(x_train_l, y_train_l, batch_size = batch_size_l, nb_epoch = 10)
 
         print("start training")
         model.fit(x_train, y_train, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)

@@ -59,18 +59,16 @@ def get_max_tracks(jets_b, jets_l, jets_c):
 def main(argv):
     # In[23]:
 
-    batch_size_jets = 1200
-    batch_size_tracks = 5200
+    batch_size_jets = 12000
+    batch_size_tracks = 52000
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
     chunks_limit = 5
 
-
     # In[24]:
 
     model = RNN_classifier()
-
 
     # In[25]:
 
@@ -78,8 +76,8 @@ def main(argv):
         print("chunk number " + str(number_chunks))
         number_chunks += 1
     
-        datafile = '/shome/phwindis/0.h5'
-        #datafile = '/scratch/snx3000/phwindis/0.h5'
+        #datafile = '/shome/phwindis/0.h5'
+        datafile = '/scratch/snx3000/phwindis/0.h5'
 
         # read in new chunk of jet and track data
         d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
