@@ -73,7 +73,7 @@ def main(argv):
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
-    chunks_limit = 35
+    chunks_limit = 50
 
     # In[24]:
 
@@ -169,14 +169,11 @@ def main(argv):
         x_train_l, y_train_l, batch_size_l = prepare_training_data(jets_l, 0, max_tracks)
         x_train = np.vstack([x_train_b, x_train_c, x_train_l])
         y_train = np.vstack([y_train_b, y_train_c, y_train_l])
-        #model.fit(x_train_b, y_train_b, batch_size = batch_size_b, nb_epoch = 25)
-        #model.fit(x_train_c, y_train_c, batch_size = batch_size_c, nb_epoch = 10)
-        #model.fit(x_train_l, y_train_l, batch_size = batch_size_l, nb_epoch = 10)
 
         x_train, y_train = shuffle_synchronized(x_train, y_train)
 
         print("start training")
-        epoch_history = model.fit(x_train, y_train, validation_split = 0.20, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)
+        epoch_history = model.fit(x_train, y_train, validation_split = 0.20, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 1)
 
         # update loss histories:
         loss_history.append(epoch_history.history['loss'])
