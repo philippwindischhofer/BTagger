@@ -18,8 +18,8 @@ export LIBRARY_PATH=$CUDNN_BASE/lib64:$LD_LIBRARY_PATH
 export THEANO_FLAGS="mode=FAST_RUN,device=gpu,lib.cnmem=1,floatX=float32,base_compiledir=$SCRATCH/theano.NOBACKUP"
 
 echo "Go back home"
-JOB_ID=lstm64_3layers_singlestep
-JOB_DESC="lstm with 3 layers, 64 nodes each, only one epoch per batch"
+JOB_ID=lstm64_3layers_singlestep_250
+JOB_DESC="lstm with 3 layers, 64 nodes each, only one epoch per batch, 250 epochs"
 OUTDIR=$HOME/BTagger/RNN_out/${JOB_ID}
 mkdir -p $OUTDIR
 echo $OUTDIR
