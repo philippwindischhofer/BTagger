@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from keras.models import Sequential
+from keras.models import Sequential, load_model
 from keras.layers import Dense, Activation
 from keras.layers import LSTM
 
@@ -20,9 +20,9 @@ from keras.layers import LSTM
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(64, return_sequences = True, input_shape = (None, 8)))
-    model.add(LSTM(64, return_sequences = True))
-    model.add(LSTM(64))
+    model.add(LSTM(128, input_shape = (None, 8)))
+    #model.add(LSTM(64, return_sequences = True))
+    #model.add(LSTM(64))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
     model.add(Dense(1, activation='sigmoid'))
@@ -77,7 +77,9 @@ def main(argv):
 
     # In[24]:
 
-    model = RNN_classifier()
+    #model = RNN_classifier()
+    print("loading model back for further training")
+    model = load_model('/users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-final.h5')
 
     loss_history = []
     loss_val_history = []
@@ -89,7 +91,7 @@ def main(argv):
         number_chunks += 1
     
         #datafile = '/shome/phwindis/0.h5'
-        datafile = '/scratch/snx3000/phwindis/0.h5'
+        datafile = '/scratch/snx3000/phwindis/13.h5'
 
         # read in new chunk of jet and track data
         d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)

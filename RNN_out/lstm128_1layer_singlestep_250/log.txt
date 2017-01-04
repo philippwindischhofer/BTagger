@@ -1,0 +1,1751 @@
+chunk number 0
+prepare data
+start training
+Train on 8136 samples, validate on 2035 samples
+Epoch 1/1
+8136/8136 [==============================] - 0s - loss: 0.6981 - acc: 0.3638 - val_loss: 0.6866 - val_acc: 0.6496
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-1.h5
+chunk number 1
+prepare data
+start training
+Train on 8160 samples, validate on 2041 samples
+Epoch 1/1
+8160/8160 [==============================] - 0s - loss: 0.6856 - acc: 0.6645 - val_loss: 0.6783 - val_acc: 0.6546
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-2.h5
+chunk number 2
+prepare data
+start training
+Train on 8182 samples, validate on 2046 samples
+Epoch 1/1
+8182/8182 [==============================] - 0s - loss: 0.6763 - acc: 0.6651 - val_loss: 0.6676 - val_acc: 0.6564
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-3.h5
+chunk number 3
+prepare data
+start training
+Train on 8167 samples, validate on 2042 samples
+Epoch 1/1
+8167/8167 [==============================] - 0s - loss: 0.6653 - acc: 0.6591 - val_loss: 0.6553 - val_acc: 0.6616
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-4.h5
+chunk number 4
+prepare data
+start training
+Train on 8048 samples, validate on 2012 samples
+Epoch 1/1
+8048/8048 [==============================] - 0s - loss: 0.6686 - acc: 0.6549 - val_loss: 0.6493 - val_acc: 0.6720
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-5.h5
+chunk number 5
+prepare data
+start training
+Train on 8117 samples, validate on 2030 samples
+Epoch 1/1
+8117/8117 [==============================] - 0s - loss: 0.6482 - acc: 0.6628 - val_loss: 0.6467 - val_acc: 0.6601
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-6.h5
+chunk number 6
+prepare data
+start training
+Train on 8182 samples, validate on 2046 samples
+Epoch 1/1
+8182/8182 [==============================] - 0s - loss: 0.6374 - acc: 0.6657 - val_loss: 0.6388 - val_acc: 0.6549
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-7.h5
+chunk number 7
+prepare data
+start training
+Train on 8116 samples, validate on 2030 samples
+Epoch 1/1
+8116/8116 [==============================] - 0s - loss: 0.6490 - acc: 0.6566 - val_loss: 0.6425 - val_acc: 0.6483
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-8.h5
+chunk number 8
+prepare data
+start training
+Train on 8086 samples, validate on 2022 samples
+Epoch 1/1
+8086/8086 [==============================] - 0s - loss: 0.6570 - acc: 0.6593 - val_loss: 0.6410 - val_acc: 0.6533
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-9.h5
+chunk number 9
+prepare data
+start training
+Train on 8220 samples, validate on 2055 samples
+Epoch 1/1
+8220/8220 [==============================] - 0s - loss: 0.6440 - acc: 0.6571 - val_loss: 0.6431 - val_acc: 0.6545
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-10.h5
+chunk number 10
+prepare data
+start training
+Train on 8132 samples, validate on 2033 samples
+Epoch 1/1
+8132/8132 [==============================] - 0s - loss: 0.6886 - acc: 0.5454 - val_loss: 0.6824 - val_acc: 0.5662
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-11.h5
+chunk number 11
+prepare data
+start training
+Train on 8186 samples, validate on 2047 samples
+Epoch 1/1
+8186/8186 [==============================] - 0s - loss: 0.6673 - acc: 0.6231 - val_loss: 0.6542 - val_acc: 0.6497
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-12.h5
+chunk number 12
+prepare data
+start training
+Train on 8205 samples, validate on 2052 samples
+Epoch 1/1
+8205/8205 [==============================] - 0s - loss: 0.6547 - acc: 0.6491 - val_loss: 0.6403 - val_acc: 0.6613
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-13.h5
+chunk number 13
+prepare data
+start training
+Train on 8166 samples, validate on 2042 samples
+Epoch 1/1
+8166/8166 [==============================] - 0s - loss: 0.6427 - acc: 0.6632 - val_loss: 0.6322 - val_acc: 0.6645
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-14.h5
+chunk number 14
+prepare data
+start training
+Train on 8130 samples, validate on 2033 samples
+Epoch 1/1
+8130/8130 [==============================] - 0s - loss: 0.6399 - acc: 0.6510 - val_loss: 0.6338 - val_acc: 0.6572
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-15.h5
+chunk number 15
+prepare data
+start training
+Train on 8086 samples, validate on 2022 samples
+Epoch 1/1
+8086/8086 [==============================] - 0s - loss: 0.6325 - acc: 0.6585 - val_loss: 0.6290 - val_acc: 0.6647
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-16.h5
+chunk number 16
+prepare data
+start training
+Train on 8113 samples, validate on 2029 samples
+Epoch 1/1
+8113/8113 [==============================] - 0s - loss: 0.6373 - acc: 0.6571 - val_loss: 0.6441 - val_acc: 0.6511
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-17.h5
+chunk number 17
+prepare data
+start training
+Train on 8134 samples, validate on 2034 samples
+Epoch 1/1
+8134/8134 [==============================] - 0s - loss: 0.6316 - acc: 0.6512 - val_loss: 0.6191 - val_acc: 0.6716
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-18.h5
+chunk number 18
+prepare data
+start training
+Train on 8221 samples, validate on 2056 samples
+Epoch 1/1
+8221/8221 [==============================] - 0s - loss: 0.6217 - acc: 0.6677 - val_loss: 0.6340 - val_acc: 0.6493
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-19.h5
+chunk number 19
+prepare data
+start training
+Train on 8180 samples, validate on 2046 samples
+Epoch 1/1
+8180/8180 [==============================] - 0s - loss: 0.6379 - acc: 0.6637 - val_loss: 0.6372 - val_acc: 0.6574
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-20.h5
+chunk number 20
+prepare data
+start training
+Train on 8123 samples, validate on 2031 samples
+Epoch 1/1
+8123/8123 [==============================] - 0s - loss: 0.6192 - acc: 0.6674 - val_loss: 0.6171 - val_acc: 0.6657
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-21.h5
+chunk number 21
+prepare data
+start training
+Train on 8140 samples, validate on 2036 samples
+Epoch 1/1
+8140/8140 [==============================] - 0s - loss: 0.6261 - acc: 0.6709 - val_loss: 0.6044 - val_acc: 0.6876
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-22.h5
+chunk number 22
+prepare data
+start training
+Train on 8040 samples, validate on 2010 samples
+Epoch 1/1
+8040/8040 [==============================] - 0s - loss: 0.5970 - acc: 0.7010 - val_loss: 0.6117 - val_acc: 0.6846
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-23.h5
+chunk number 23
+prepare data
+start training
+Train on 8117 samples, validate on 2030 samples
+Epoch 1/1
+8117/8117 [==============================] - 0s - loss: 0.6088 - acc: 0.6870 - val_loss: 0.6007 - val_acc: 0.7015
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-24.h5
+chunk number 24
+prepare data
+start training
+Train on 8140 samples, validate on 2035 samples
+Epoch 1/1
+8140/8140 [==============================] - 0s - loss: 0.6241 - acc: 0.6715 - val_loss: 0.6049 - val_acc: 0.7002
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-25.h5
+chunk number 25
+prepare data
+start training
+Train on 8058 samples, validate on 2015 samples
+Epoch 1/1
+8058/8058 [==============================] - 0s - loss: 0.5907 - acc: 0.7143 - val_loss: 0.5787 - val_acc: 0.7107
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-26.h5
+chunk number 26
+prepare data
+start training
+Train on 8100 samples, validate on 2026 samples
+Epoch 1/1
+8100/8100 [==============================] - 0s - loss: 0.5793 - acc: 0.7067 - val_loss: 0.5782 - val_acc: 0.7093
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-27.h5
+chunk number 27
+prepare data
+start training
+Train on 8095 samples, validate on 2024 samples
+Epoch 1/1
+8095/8095 [==============================] - 0s - loss: 0.5770 - acc: 0.7070 - val_loss: 0.5720 - val_acc: 0.7105
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-28.h5
+chunk number 28
+prepare data
+start training
+Train on 8135 samples, validate on 2034 samples
+Epoch 1/1
+8135/8135 [==============================] - 0s - loss: 0.5813 - acc: 0.7200 - val_loss: 0.5725 - val_acc: 0.7212
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-29.h5
+chunk number 29
+prepare data
+start training
+Train on 8105 samples, validate on 2027 samples
+Epoch 1/1
+8105/8105 [==============================] - 0s - loss: 0.5609 - acc: 0.7326 - val_loss: 0.5605 - val_acc: 0.7193
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-30.h5
+chunk number 30
+prepare data
+start training
+Train on 8185 samples, validate on 2047 samples
+Epoch 1/1
+8185/8185 [==============================] - 0s - loss: 0.5652 - acc: 0.7172 - val_loss: 0.5299 - val_acc: 0.7543
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-31.h5
+chunk number 31
+prepare data
+start training
+Train on 8079 samples, validate on 2020 samples
+Epoch 1/1
+8079/8079 [==============================] - 0s - loss: 0.5362 - acc: 0.7459 - val_loss: 0.5252 - val_acc: 0.7574
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-32.h5
+chunk number 32
+prepare data
+start training
+Train on 8130 samples, validate on 2033 samples
+Epoch 1/1
+8130/8130 [==============================] - 0s - loss: 0.5299 - acc: 0.7487 - val_loss: 0.5180 - val_acc: 0.7605
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-33.h5
+chunk number 33
+prepare data
+start training
+Train on 8214 samples, validate on 2054 samples
+Epoch 1/1
+8214/8214 [==============================] - 0s - loss: 0.5390 - acc: 0.7396 - val_loss: 0.5264 - val_acc: 0.7502
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-34.h5
+chunk number 34
+prepare data
+start training
+Train on 8084 samples, validate on 2021 samples
+Epoch 1/1
+8084/8084 [==============================] - 0s - loss: 0.5548 - acc: 0.7470 - val_loss: 0.5420 - val_acc: 0.7511
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-35.h5
+chunk number 35
+prepare data
+start training
+Train on 8199 samples, validate on 2050 samples
+Epoch 1/1
+8199/8199 [==============================] - 0s - loss: 0.5222 - acc: 0.7548 - val_loss: 0.5209 - val_acc: 0.7585
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-36.h5
+chunk number 36
+prepare data
+start training
+Train on 8126 samples, validate on 2032 samples
+Epoch 1/1
+8126/8126 [==============================] - 0s - loss: 0.5253 - acc: 0.7605 - val_loss: 0.5068 - val_acc: 0.7776
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-37.h5
+chunk number 37
+prepare data
+start training
+Train on 8127 samples, validate on 2032 samples
+Epoch 1/1
+8127/8127 [==============================] - 0s - loss: 0.5062 - acc: 0.7708 - val_loss: 0.5338 - val_acc: 0.7539
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-38.h5
+chunk number 38
+prepare data
+start training
+Train on 8040 samples, validate on 2011 samples
+Epoch 1/1
+8040/8040 [==============================] - 0s - loss: 0.5196 - acc: 0.7541 - val_loss: 0.5400 - val_acc: 0.7454
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-39.h5
+chunk number 39
+prepare data
+start training
+Train on 8109 samples, validate on 2028 samples
+Epoch 1/1
+8109/8109 [==============================] - 0s - loss: 0.5251 - acc: 0.7578 - val_loss: 0.5189 - val_acc: 0.7574
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-40.h5
+chunk number 40
+prepare data
+start training
+Train on 8199 samples, validate on 2050 samples
+Epoch 1/1
+8199/8199 [==============================] - 0s - loss: 0.5225 - acc: 0.7733 - val_loss: 0.5243 - val_acc: 0.7615
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-41.h5
+chunk number 41
+prepare data
+start training
+Train on 8120 samples, validate on 2031 samples
+Epoch 1/1
+8120/8120 [==============================] - 0s - loss: 0.5062 - acc: 0.7725 - val_loss: 0.4977 - val_acc: 0.7829
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-42.h5
+chunk number 42
+prepare data
+start training
+Train on 8105 samples, validate on 2027 samples
+Epoch 1/1
+8105/8105 [==============================] - 0s - loss: 0.4919 - acc: 0.7863 - val_loss: 0.4765 - val_acc: 0.7938
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-43.h5
+chunk number 43
+prepare data
+start training
+Train on 8189 samples, validate on 2048 samples
+Epoch 1/1
+8189/8189 [==============================] - 0s - loss: 0.5050 - acc: 0.7699 - val_loss: 0.5167 - val_acc: 0.7661
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-44.h5
+chunk number 44
+prepare data
+start training
+Train on 8052 samples, validate on 2013 samples
+Epoch 1/1
+8052/8052 [==============================] - 0s - loss: 0.5040 - acc: 0.7709 - val_loss: 0.5148 - val_acc: 0.7630
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-45.h5
+chunk number 45
+prepare data
+start training
+Train on 8124 samples, validate on 2032 samples
+Epoch 1/1
+8124/8124 [==============================] - 0s - loss: 0.5079 - acc: 0.7731 - val_loss: 0.4938 - val_acc: 0.7751
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-46.h5
+chunk number 46
+prepare data
+start training
+Train on 8172 samples, validate on 2043 samples
+Epoch 1/1
+8172/8172 [==============================] - 0s - loss: 0.4896 - acc: 0.7813 - val_loss: 0.4849 - val_acc: 0.7881
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-47.h5
+chunk number 47
+prepare data
+start training
+Train on 8160 samples, validate on 2040 samples
+Epoch 1/1
+8160/8160 [==============================] - 0s - loss: 0.4921 - acc: 0.7871 - val_loss: 0.4866 - val_acc: 0.7912
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-48.h5
+chunk number 48
+prepare data
+start training
+Train on 8160 samples, validate on 2040 samples
+Epoch 1/1
+8160/8160 [==============================] - 0s - loss: 0.4839 - acc: 0.7880 - val_loss: 0.4810 - val_acc: 0.7931
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-49.h5
+chunk number 49
+prepare data
+start training
+Train on 8063 samples, validate on 2016 samples
+Epoch 1/1
+8063/8063 [==============================] - 0s - loss: 0.4921 - acc: 0.7773 - val_loss: 0.4927 - val_acc: 0.7778
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-50.h5
+chunk number 50
+prepare data
+start training
+Train on 8140 samples, validate on 2036 samples
+Epoch 1/1
+8140/8140 [==============================] - 0s - loss: 0.4884 - acc: 0.7817 - val_loss: 0.4831 - val_acc: 0.7770
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-51.h5
+chunk number 51
+prepare data
+start training
+Train on 8153 samples, validate on 2039 samples
+Epoch 1/1
+8153/8153 [==============================] - 0s - loss: 0.4838 - acc: 0.7860 - val_loss: 0.4820 - val_acc: 0.7827
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-52.h5
+chunk number 52
+prepare data
+start training
+Train on 8186 samples, validate on 2047 samples
+Epoch 1/1
+8186/8186 [==============================] - 0s - loss: 0.4842 - acc: 0.7856 - val_loss: 0.4951 - val_acc: 0.7753
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-53.h5
+chunk number 53
+prepare data
+start training
+Train on 8064 samples, validate on 2016 samples
+Epoch 1/1
+8064/8064 [==============================] - 0s - loss: 0.5036 - acc: 0.7702 - val_loss: 0.4838 - val_acc: 0.7812
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-54.h5
+chunk number 54
+prepare data
+start training
+Train on 8068 samples, validate on 2017 samples
+Epoch 1/1
+8068/8068 [==============================] - 0s - loss: 0.4831 - acc: 0.7842 - val_loss: 0.4982 - val_acc: 0.7709
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-55.h5
+chunk number 55
+prepare data
+start training
+Train on 8121 samples, validate on 2031 samples
+Epoch 1/1
+8121/8121 [==============================] - 0s - loss: 0.5272 - acc: 0.7715 - val_loss: 0.5096 - val_acc: 0.7888
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-56.h5
+chunk number 56
+prepare data
+start training
+Train on 8127 samples, validate on 2032 samples
+Epoch 1/1
+8127/8127 [==============================] - 0s - loss: 0.4807 - acc: 0.7832 - val_loss: 0.4748 - val_acc: 0.7923
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-57.h5
+chunk number 57
+prepare data
+start training
+Train on 8179 samples, validate on 2045 samples
+Epoch 1/1
+8179/8179 [==============================] - 0s - loss: 0.4901 - acc: 0.7774 - val_loss: 0.4960 - val_acc: 0.7760
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-58.h5
+chunk number 58
+prepare data
+start training
+Train on 8060 samples, validate on 2016 samples
+Epoch 1/1
+8060/8060 [==============================] - 0s - loss: 0.4802 - acc: 0.7892 - val_loss: 0.4918 - val_acc: 0.7788
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-59.h5
+chunk number 59
+prepare data
+start training
+Train on 8140 samples, validate on 2035 samples
+Epoch 1/1
+8140/8140 [==============================] - 0s - loss: 0.4967 - acc: 0.7783 - val_loss: 0.4954 - val_acc: 0.7744
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-60.h5
+chunk number 60
+prepare data
+start training
+Train on 8170 samples, validate on 2043 samples
+Epoch 1/1
+8170/8170 [==============================] - 0s - loss: 0.4863 - acc: 0.7808 - val_loss: 0.4812 - val_acc: 0.7837
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-61.h5
+chunk number 61
+prepare data
+start training
+Train on 8152 samples, validate on 2038 samples
+Epoch 1/1
+8152/8152 [==============================] - 0s - loss: 0.4901 - acc: 0.7787 - val_loss: 0.4581 - val_acc: 0.7978
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-62.h5
+chunk number 62
+prepare data
+start training
+Train on 8149 samples, validate on 2038 samples
+Epoch 1/1
+8149/8149 [==============================] - 0s - loss: 0.4829 - acc: 0.7789 - val_loss: 0.4791 - val_acc: 0.7875
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-63.h5
+chunk number 63
+prepare data
+start training
+Train on 8210 samples, validate on 2053 samples
+Epoch 1/1
+8210/8210 [==============================] - 0s - loss: 0.4781 - acc: 0.7923 - val_loss: 0.4688 - val_acc: 0.8047
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-64.h5
+chunk number 64
+prepare data
+start training
+Train on 8143 samples, validate on 2036 samples
+Epoch 1/1
+8143/8143 [==============================] - 0s - loss: 0.4920 - acc: 0.7872 - val_loss: 0.4703 - val_acc: 0.7991
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-65.h5
+chunk number 65
+prepare data
+start training
+Train on 8157 samples, validate on 2040 samples
+Epoch 1/1
+8157/8157 [==============================] - 0s - loss: 0.4739 - acc: 0.7917 - val_loss: 0.4724 - val_acc: 0.7907
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-66.h5
+chunk number 66
+prepare data
+start training
+Train on 8117 samples, validate on 2030 samples
+Epoch 1/1
+8117/8117 [==============================] - 0s - loss: 0.4739 - acc: 0.7892 - val_loss: 0.4654 - val_acc: 0.8020
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-67.h5
+chunk number 67
+prepare data
+start training
+Train on 8136 samples, validate on 2035 samples
+Epoch 1/1
+8136/8136 [==============================] - 0s - loss: 0.4746 - acc: 0.7940 - val_loss: 0.4665 - val_acc: 0.8015
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-68.h5
+chunk number 68
+prepare data
+start training
+Train on 8095 samples, validate on 2024 samples
+Epoch 1/1
+8095/8095 [==============================] - 0s - loss: 0.4654 - acc: 0.7926 - val_loss: 0.4628 - val_acc: 0.7920
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-69.h5
+chunk number 69
+prepare data
+start training
+Train on 8048 samples, validate on 2012 samples
+Epoch 1/1
+8048/8048 [==============================] - 0s - loss: 0.5273 - acc: 0.7665 - val_loss: 0.5456 - val_acc: 0.7888
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-70.h5
+chunk number 70
+prepare data
+start training
+Train on 8194 samples, validate on 2049 samples
+Epoch 1/1
+8194/8194 [==============================] - 0s - loss: 0.5050 - acc: 0.7889 - val_loss: 0.4990 - val_acc: 0.7809
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-71.h5
+chunk number 71
+prepare data
+start training
+Train on 8067 samples, validate on 2017 samples
+Epoch 1/1
+8067/8067 [==============================] - 0s - loss: 0.4890 - acc: 0.7839 - val_loss: 0.4625 - val_acc: 0.7972
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-72.h5
+chunk number 72
+prepare data
+start training
+Train on 8157 samples, validate on 2040 samples
+Epoch 1/1
+8157/8157 [==============================] - 0s - loss: 0.4771 - acc: 0.7982 - val_loss: 0.5015 - val_acc: 0.7814
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-73.h5
+chunk number 73
+prepare data
+start training
+Train on 8104 samples, validate on 2026 samples
+Epoch 1/1
+8104/8104 [==============================] - 0s - loss: 0.4838 - acc: 0.7911 - val_loss: 0.4871 - val_acc: 0.7828
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-74.h5
+chunk number 74
+prepare data
+start training
+Train on 8079 samples, validate on 2020 samples
+Epoch 1/1
+8079/8079 [==============================] - 0s - loss: 0.4594 - acc: 0.8032 - val_loss: 0.4759 - val_acc: 0.7866
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-75.h5
+chunk number 75
+prepare data
+start training
+Train on 8179 samples, validate on 2045 samples
+Epoch 1/1
+8179/8179 [==============================] - 0s - loss: 0.4945 - acc: 0.7777 - val_loss: 0.4951 - val_acc: 0.7721
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-76.h5
+chunk number 76
+prepare data
+start training
+Train on 8156 samples, validate on 2039 samples
+Epoch 1/1
+8156/8156 [==============================] - 0s - loss: 0.5004 - acc: 0.7820 - val_loss: 0.4695 - val_acc: 0.7916
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-77.h5
+chunk number 77
+prepare data
+start training
+Train on 8122 samples, validate on 2031 samples
+Epoch 1/1
+8122/8122 [==============================] - 0s - loss: 0.4613 - acc: 0.8033 - val_loss: 0.4885 - val_acc: 0.7829
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-78.h5
+chunk number 78
+prepare data
+start training
+Train on 8082 samples, validate on 2021 samples
+Epoch 1/1
+8082/8082 [==============================] - 0s - loss: 0.4808 - acc: 0.7950 - val_loss: 0.5115 - val_acc: 0.7709
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-79.h5
+chunk number 79
+prepare data
+start training
+Train on 8151 samples, validate on 2038 samples
+Epoch 1/1
+8151/8151 [==============================] - 0s - loss: 0.4872 - acc: 0.7887 - val_loss: 0.4824 - val_acc: 0.7910
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-80.h5
+chunk number 80
+prepare data
+start training
+Train on 8032 samples, validate on 2008 samples
+Epoch 1/1
+8032/8032 [==============================] - 0s - loss: 0.4604 - acc: 0.8058 - val_loss: 0.4681 - val_acc: 0.7963
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-81.h5
+chunk number 81
+prepare data
+start training
+Train on 8145 samples, validate on 2037 samples
+Epoch 1/1
+8145/8145 [==============================] - 0s - loss: 0.4697 - acc: 0.8000 - val_loss: 0.4790 - val_acc: 0.7923
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-82.h5
+chunk number 82
+prepare data
+start training
+Train on 8124 samples, validate on 2032 samples
+Epoch 1/1
+8124/8124 [==============================] - 0s - loss: 0.4924 - acc: 0.7839 - val_loss: 0.4967 - val_acc: 0.7795
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-83.h5
+chunk number 83
+prepare data
+start training
+Train on 8190 samples, validate on 2048 samples
+Epoch 1/1
+8190/8190 [==============================] - 0s - loss: 0.4691 - acc: 0.7902 - val_loss: 0.4757 - val_acc: 0.7866
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-84.h5
+chunk number 84
+prepare data
+start training
+Train on 8087 samples, validate on 2022 samples
+Epoch 1/1
+8087/8087 [==============================] - 0s - loss: 0.4710 - acc: 0.7919 - val_loss: 0.4658 - val_acc: 0.7972
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-85.h5
+chunk number 85
+prepare data
+start training
+Train on 8112 samples, validate on 2028 samples
+Epoch 1/1
+8112/8112 [==============================] - 0s - loss: 0.4968 - acc: 0.7705 - val_loss: 0.4753 - val_acc: 0.7988
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-86.h5
+chunk number 86
+prepare data
+start training
+Train on 8168 samples, validate on 2042 samples
+Epoch 1/1
+8168/8168 [==============================] - 0s - loss: 0.4779 - acc: 0.7917 - val_loss: 0.4759 - val_acc: 0.7924
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-87.h5
+chunk number 87
+prepare data
+start training
+Train on 8190 samples, validate on 2048 samples
+Epoch 1/1
+8190/8190 [==============================] - 0s - loss: 0.4857 - acc: 0.7853 - val_loss: 0.4682 - val_acc: 0.7930
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-88.h5
+chunk number 88
+prepare data
+start training
+Train on 8144 samples, validate on 2037 samples
+Epoch 1/1
+8144/8144 [==============================] - 0s - loss: 0.4841 - acc: 0.7916 - val_loss: 0.4748 - val_acc: 0.7977
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-89.h5
+chunk number 89
+prepare data
+start training
+Train on 8152 samples, validate on 2038 samples
+Epoch 1/1
+8152/8152 [==============================] - 0s - loss: 0.4652 - acc: 0.7920 - val_loss: 0.4708 - val_acc: 0.7944
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-90.h5
+chunk number 90
+prepare data
+start training
+Train on 8184 samples, validate on 2047 samples
+Epoch 1/1
+8184/8184 [==============================] - 0s - loss: 0.4783 - acc: 0.7900 - val_loss: 0.5054 - val_acc: 0.7699
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-91.h5
+chunk number 91
+prepare data
+start training
+Train on 8172 samples, validate on 2044 samples
+Epoch 1/1
+8172/8172 [==============================] - 0s - loss: 0.4934 - acc: 0.7757 - val_loss: 0.4841 - val_acc: 0.7808
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-92.h5
+chunk number 92
+prepare data
+start training
+Train on 8020 samples, validate on 2005 samples
+Epoch 1/1
+8020/8020 [==============================] - 0s - loss: 0.4578 - acc: 0.7990 - val_loss: 0.4589 - val_acc: 0.8035
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-93.h5
+chunk number 93
+prepare data
+start training
+Train on 8139 samples, validate on 2035 samples
+Epoch 1/1
+8139/8139 [==============================] - 0s - loss: 0.4870 - acc: 0.7799 - val_loss: 0.4750 - val_acc: 0.7887
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-94.h5
+chunk number 94
+prepare data
+start training
+Train on 8113 samples, validate on 2029 samples
+Epoch 1/1
+8113/8113 [==============================] - 0s - loss: 0.4842 - acc: 0.7837 - val_loss: 0.4790 - val_acc: 0.7861
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-95.h5
+chunk number 95
+prepare data
+start training
+Train on 8072 samples, validate on 2019 samples
+Epoch 1/1
+8072/8072 [==============================] - 0s - loss: 0.4692 - acc: 0.7979 - val_loss: 0.4685 - val_acc: 0.7935
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-96.h5
+chunk number 96
+prepare data
+start training
+Train on 8040 samples, validate on 2011 samples
+Epoch 1/1
+8040/8040 [==============================] - 0s - loss: 0.4653 - acc: 0.7976 - val_loss: 0.4887 - val_acc: 0.7827
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-97.h5
+chunk number 97
+prepare data
+start training
+Train on 8108 samples, validate on 2027 samples
+Epoch 1/1
+8108/8108 [==============================] - 0s - loss: 0.4812 - acc: 0.7837 - val_loss: 0.4732 - val_acc: 0.7829
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-98.h5
+chunk number 98
+prepare data
+start training
+Train on 8218 samples, validate on 2055 samples
+Epoch 1/1
+8218/8218 [==============================] - 0s - loss: 0.4830 - acc: 0.7832 - val_loss: 0.4458 - val_acc: 0.8112
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-99.h5
+chunk number 99
+prepare data
+start training
+Train on 8101 samples, validate on 2026 samples
+Epoch 1/1
+8101/8101 [==============================] - 0s - loss: 0.4635 - acc: 0.7972 - val_loss: 0.4685 - val_acc: 0.7887
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-100.h5
+chunk number 100
+prepare data
+start training
+Train on 8181 samples, validate on 2046 samples
+Epoch 1/1
+8181/8181 [==============================] - 0s - loss: 0.4696 - acc: 0.7882 - val_loss: 0.4675 - val_acc: 0.7893
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-101.h5
+chunk number 101
+prepare data
+start training
+Train on 8212 samples, validate on 2054 samples
+Epoch 1/1
+8212/8212 [==============================] - 0s - loss: 0.4820 - acc: 0.7829 - val_loss: 0.4511 - val_acc: 0.8019
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-102.h5
+chunk number 102
+prepare data
+start training
+Train on 8192 samples, validate on 2048 samples
+Epoch 1/1
+8192/8192 [==============================] - 0s - loss: 0.4733 - acc: 0.7816 - val_loss: 0.4645 - val_acc: 0.7974
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-103.h5
+chunk number 103
+prepare data
+start training
+Train on 8174 samples, validate on 2044 samples
+Epoch 1/1
+8174/8174 [==============================] - 0s - loss: 0.4577 - acc: 0.7983 - val_loss: 0.4596 - val_acc: 0.8019
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-104.h5
+chunk number 104
+prepare data
+start training
+Train on 8118 samples, validate on 2030 samples
+Epoch 1/1
+8118/8118 [==============================] - 0s - loss: 0.4702 - acc: 0.7884 - val_loss: 0.4403 - val_acc: 0.8094
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-105.h5
+chunk number 105
+prepare data
+start training
+Train on 8156 samples, validate on 2040 samples
+Epoch 1/1
+8156/8156 [==============================] - 0s - loss: 0.4634 - acc: 0.7988 - val_loss: 0.4860 - val_acc: 0.7809
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-106.h5
+chunk number 106
+prepare data
+start training
+Train on 8145 samples, validate on 2037 samples
+Epoch 1/1
+8145/8145 [==============================] - 0s - loss: 0.4592 - acc: 0.7972 - val_loss: 0.4890 - val_acc: 0.7855
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-107.h5
+chunk number 107
+prepare data
+start training
+Train on 8064 samples, validate on 2016 samples
+Epoch 1/1
+8064/8064 [==============================] - 0s - loss: 0.4601 - acc: 0.8026 - val_loss: 0.4340 - val_acc: 0.8145
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-108.h5
+chunk number 108
+prepare data
+start training
+Train on 8207 samples, validate on 2052 samples
+Epoch 1/1
+8207/8207 [==============================] - 0s - loss: 0.4687 - acc: 0.7946 - val_loss: 0.4559 - val_acc: 0.8031
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-109.h5
+chunk number 109
+prepare data
+start training
+Train on 8148 samples, validate on 2037 samples
+Epoch 1/1
+8148/8148 [==============================] - 0s - loss: 0.4606 - acc: 0.8023 - val_loss: 0.4652 - val_acc: 0.7997
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-110.h5
+chunk number 110
+prepare data
+start training
+Train on 8165 samples, validate on 2042 samples
+Epoch 1/1
+8165/8165 [==============================] - 0s - loss: 0.4658 - acc: 0.7956 - val_loss: 0.4598 - val_acc: 0.8022
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-111.h5
+chunk number 111
+prepare data
+start training
+Train on 8104 samples, validate on 2026 samples
+Epoch 1/1
+8104/8104 [==============================] - 0s - loss: 0.4716 - acc: 0.7880 - val_loss: 0.4732 - val_acc: 0.7897
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-112.h5
+chunk number 112
+prepare data
+start training
+Train on 8093 samples, validate on 2024 samples
+Epoch 1/1
+8093/8093 [==============================] - 0s - loss: 0.4640 - acc: 0.7920 - val_loss: 0.4624 - val_acc: 0.7930
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-113.h5
+chunk number 113
+prepare data
+start training
+Train on 8190 samples, validate on 2048 samples
+Epoch 1/1
+8190/8190 [==============================] - 0s - loss: 0.4682 - acc: 0.7924 - val_loss: 0.4512 - val_acc: 0.7988
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-114.h5
+chunk number 114
+prepare data
+start training
+Train on 8085 samples, validate on 2022 samples
+Epoch 1/1
+8085/8085 [==============================] - 0s - loss: 0.4613 - acc: 0.7964 - val_loss: 0.4597 - val_acc: 0.7953
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-115.h5
+chunk number 115
+prepare data
+start training
+Train on 8120 samples, validate on 2031 samples
+Epoch 1/1
+8120/8120 [==============================] - 0s - loss: 0.4500 - acc: 0.8026 - val_loss: 0.4753 - val_acc: 0.7834
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-116.h5
+chunk number 116
+prepare data
+start training
+Train on 8167 samples, validate on 2042 samples
+Epoch 1/1
+8167/8167 [==============================] - 0s - loss: 0.4665 - acc: 0.7896 - val_loss: 0.4622 - val_acc: 0.7899
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-117.h5
+chunk number 117
+prepare data
+start training
+Train on 8220 samples, validate on 2055 samples
+Epoch 1/1
+8220/8220 [==============================] - 0s - loss: 0.4543 - acc: 0.8000 - val_loss: 0.4621 - val_acc: 0.7961
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-118.h5
+chunk number 118
+prepare data
+start training
+Train on 8066 samples, validate on 2017 samples
+Epoch 1/1
+8066/8066 [==============================] - 0s - loss: 0.4659 - acc: 0.7932 - val_loss: 0.4575 - val_acc: 0.8002
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-119.h5
+chunk number 119
+prepare data
+start training
+Train on 8156 samples, validate on 2040 samples
+Epoch 1/1
+8156/8156 [==============================] - 0s - loss: 0.4571 - acc: 0.7973 - val_loss: 0.4613 - val_acc: 0.7922
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-120.h5
+chunk number 120
+prepare data
+start training
+Train on 8120 samples, validate on 2030 samples
+Epoch 1/1
+8120/8120 [==============================] - 0s - loss: 0.4709 - acc: 0.7881 - val_loss: 0.4359 - val_acc: 0.8212
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-121.h5
+chunk number 121
+prepare data
+start training
+Train on 8071 samples, validate on 2018 samples
+Epoch 1/1
+8071/8071 [==============================] - 0s - loss: 0.4692 - acc: 0.7869 - val_loss: 0.4419 - val_acc: 0.8062
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-122.h5
+chunk number 122
+prepare data
+start training
+Train on 8054 samples, validate on 2014 samples
+Epoch 1/1
+8054/8054 [==============================] - 0s - loss: 0.4493 - acc: 0.8012 - val_loss: 0.4605 - val_acc: 0.7910
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-123.h5
+chunk number 123
+prepare data
+start training
+Train on 8064 samples, validate on 2017 samples
+Epoch 1/1
+8064/8064 [==============================] - 0s - loss: 0.4587 - acc: 0.7974 - val_loss: 0.4591 - val_acc: 0.8017
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-124.h5
+chunk number 124
+prepare data
+start training
+Train on 8143 samples, validate on 2036 samples
+Epoch 1/1
+8143/8143 [==============================] - 0s - loss: 0.4675 - acc: 0.7875 - val_loss: 0.4433 - val_acc: 0.8050
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-125.h5
+chunk number 125
+prepare data
+start training
+Train on 8020 samples, validate on 2006 samples
+Epoch 1/1
+8020/8020 [==============================] - 0s - loss: 0.4520 - acc: 0.8054 - val_loss: 0.4662 - val_acc: 0.7876
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-126.h5
+chunk number 126
+prepare data
+start training
+Train on 8101 samples, validate on 2026 samples
+Epoch 1/1
+8101/8101 [==============================] - 0s - loss: 0.4432 - acc: 0.8046 - val_loss: 0.4331 - val_acc: 0.8105
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-127.h5
+chunk number 127
+prepare data
+start training
+Train on 8224 samples, validate on 2056 samples
+Epoch 1/1
+8224/8224 [==============================] - 0s - loss: 0.4648 - acc: 0.7870 - val_loss: 0.4483 - val_acc: 0.8016
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-128.h5
+chunk number 128
+prepare data
+start training
+Train on 8080 samples, validate on 2021 samples
+Epoch 1/1
+8080/8080 [==============================] - 0s - loss: 0.4609 - acc: 0.7897 - val_loss: 0.4392 - val_acc: 0.8041
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-129.h5
+chunk number 129
+prepare data
+start training
+Train on 8120 samples, validate on 2031 samples
+Epoch 1/1
+8120/8120 [==============================] - 0s - loss: 0.4536 - acc: 0.7986 - val_loss: 0.4565 - val_acc: 0.7957
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-130.h5
+chunk number 130
+prepare data
+start training
+Train on 8171 samples, validate on 2043 samples
+Epoch 1/1
+8171/8171 [==============================] - 0s - loss: 0.4602 - acc: 0.7968 - val_loss: 0.4593 - val_acc: 0.7969
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-131.h5
+chunk number 131
+prepare data
+start training
+Train on 8138 samples, validate on 2035 samples
+Epoch 1/1
+8138/8138 [==============================] - 0s - loss: 0.4642 - acc: 0.7913 - val_loss: 0.4697 - val_acc: 0.7961
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-132.h5
+chunk number 132
+prepare data
+start training
+Train on 8153 samples, validate on 2039 samples
+Epoch 1/1
+8153/8153 [==============================] - 0s - loss: 0.4683 - acc: 0.7874 - val_loss: 0.4674 - val_acc: 0.7896
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-133.h5
+chunk number 133
+prepare data
+start training
+Train on 8124 samples, validate on 2031 samples
+Epoch 1/1
+8124/8124 [==============================] - 0s - loss: 0.4673 - acc: 0.7850 - val_loss: 0.4553 - val_acc: 0.7883
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-134.h5
+chunk number 134
+prepare data
+start training
+Train on 8180 samples, validate on 2045 samples
+Epoch 1/1
+8180/8180 [==============================] - 0s - loss: 0.4545 - acc: 0.7980 - val_loss: 0.4591 - val_acc: 0.7863
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-135.h5
+chunk number 135
+prepare data
+start training
+Train on 8064 samples, validate on 2017 samples
+Epoch 1/1
+8064/8064 [==============================] - 0s - loss: 0.4570 - acc: 0.7948 - val_loss: 0.4429 - val_acc: 0.8096
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-136.h5
+chunk number 136
+prepare data
+start training
+Train on 8185 samples, validate on 2047 samples
+Epoch 1/1
+8185/8185 [==============================] - 0s - loss: 0.4586 - acc: 0.8009 - val_loss: 0.4575 - val_acc: 0.7880
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-137.h5
+chunk number 137
+prepare data
+start training
+Train on 8088 samples, validate on 2023 samples
+Epoch 1/1
+8088/8088 [==============================] - 0s - loss: 0.4538 - acc: 0.7969 - val_loss: 0.4675 - val_acc: 0.7850
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-138.h5
+chunk number 138
+prepare data
+start training
+Train on 8171 samples, validate on 2043 samples
+Epoch 1/1
+8171/8171 [==============================] - 0s - loss: 0.4570 - acc: 0.7948 - val_loss: 0.4523 - val_acc: 0.8027
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-139.h5
+chunk number 139
+prepare data
+start training
+Train on 8224 samples, validate on 2057 samples
+Epoch 1/1
+8224/8224 [==============================] - 0s - loss: 0.4393 - acc: 0.8085 - val_loss: 0.4570 - val_acc: 0.7982
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-140.h5
+chunk number 140
+prepare data
+start training
+Train on 8119 samples, validate on 2030 samples
+Epoch 1/1
+8119/8119 [==============================] - 0s - loss: 0.4597 - acc: 0.7937 - val_loss: 0.4529 - val_acc: 0.7887
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-141.h5
+chunk number 141
+prepare data
+start training
+Train on 8155 samples, validate on 2039 samples
+Epoch 1/1
+8155/8155 [==============================] - 0s - loss: 0.4655 - acc: 0.7919 - val_loss: 0.4400 - val_acc: 0.8033
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-142.h5
+chunk number 142
+prepare data
+start training
+Train on 8144 samples, validate on 2037 samples
+Epoch 1/1
+8144/8144 [==============================] - 0s - loss: 0.4574 - acc: 0.7975 - val_loss: 0.4728 - val_acc: 0.7845
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-143.h5
+chunk number 143
+prepare data
+start training
+Train on 8172 samples, validate on 2043 samples
+Epoch 1/1
+8172/8172 [==============================] - 0s - loss: 0.4683 - acc: 0.7928 - val_loss: 0.4512 - val_acc: 0.8032
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-144.h5
+chunk number 144
+prepare data
+start training
+Train on 8147 samples, validate on 2037 samples
+Epoch 1/1
+8147/8147 [==============================] - 0s - loss: 0.4489 - acc: 0.8032 - val_loss: 0.4451 - val_acc: 0.7968
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-145.h5
+chunk number 145
+prepare data
+start training
+Train on 8097 samples, validate on 2025 samples
+Epoch 1/1
+8097/8097 [==============================] - 0s - loss: 0.4482 - acc: 0.8035 - val_loss: 0.4598 - val_acc: 0.7926
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-146.h5
+chunk number 146
+prepare data
+start training
+Train on 8060 samples, validate on 2015 samples
+Epoch 1/1
+8060/8060 [==============================] - 0s - loss: 0.4593 - acc: 0.7968 - val_loss: 0.4696 - val_acc: 0.7866
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-147.h5
+chunk number 147
+prepare data
+start training
+Train on 8201 samples, validate on 2051 samples
+Epoch 1/1
+8201/8201 [==============================] - 0s - loss: 0.4444 - acc: 0.8020 - val_loss: 0.4507 - val_acc: 0.8011
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-148.h5
+chunk number 148
+prepare data
+start training
+Train on 8160 samples, validate on 2041 samples
+Epoch 1/1
+8160/8160 [==============================] - 0s - loss: 0.4672 - acc: 0.7925 - val_loss: 0.4724 - val_acc: 0.7913
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-149.h5
+chunk number 149
+prepare data
+start training
+Train on 8110 samples, validate on 2028 samples
+Epoch 1/1
+8110/8110 [==============================] - 0s - loss: 0.4536 - acc: 0.8032 - val_loss: 0.4282 - val_acc: 0.8062
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-150.h5
+chunk number 150
+prepare data
+start training
+Train on 8108 samples, validate on 2027 samples
+Epoch 1/1
+8108/8108 [==============================] - 0s - loss: 0.4506 - acc: 0.7967 - val_loss: 0.4715 - val_acc: 0.7918
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-151.h5
+chunk number 151
+prepare data
+start training
+Train on 8149 samples, validate on 2038 samples
+Epoch 1/1
+8149/8149 [==============================] - 0s - loss: 0.4566 - acc: 0.7956 - val_loss: 0.4601 - val_acc: 0.7988
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-152.h5
+chunk number 152
+prepare data
+start training
+Train on 8108 samples, validate on 2028 samples
+Epoch 1/1
+8108/8108 [==============================] - 0s - loss: 0.4600 - acc: 0.7963 - val_loss: 0.4423 - val_acc: 0.8033
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-153.h5
+chunk number 153
+prepare data
+start training
+Train on 8103 samples, validate on 2026 samples
+Epoch 1/1
+8103/8103 [==============================] - 0s - loss: 0.4516 - acc: 0.7921 - val_loss: 0.4616 - val_acc: 0.7937
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-154.h5
+chunk number 154
+prepare data
+start training
+Train on 8158 samples, validate on 2040 samples
+Epoch 1/1
+8158/8158 [==============================] - 0s - loss: 0.4537 - acc: 0.8014 - val_loss: 0.4488 - val_acc: 0.7975
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-155.h5
+chunk number 155
+prepare data
+start training
+Train on 8074 samples, validate on 2019 samples
+Epoch 1/1
+8074/8074 [==============================] - 0s - loss: 0.4502 - acc: 0.8033 - val_loss: 0.4428 - val_acc: 0.8078
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-156.h5
+chunk number 156
+prepare data
+start training
+Train on 8219 samples, validate on 2055 samples
+Epoch 1/1
+8219/8219 [==============================] - 0s - loss: 0.4497 - acc: 0.7985 - val_loss: 0.4805 - val_acc: 0.7859
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-157.h5
+chunk number 157
+prepare data
+start training
+Train on 8094 samples, validate on 2024 samples
+Epoch 1/1
+8094/8094 [==============================] - 0s - loss: 0.4543 - acc: 0.7937 - val_loss: 0.4287 - val_acc: 0.8127
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-158.h5
+chunk number 158
+prepare data
+start training
+Train on 8100 samples, validate on 2026 samples
+Epoch 1/1
+8100/8100 [==============================] - 0s - loss: 0.4488 - acc: 0.7973 - val_loss: 0.4322 - val_acc: 0.8060
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-159.h5
+chunk number 159
+prepare data
+start training
+Train on 8083 samples, validate on 2021 samples
+Epoch 1/1
+8083/8083 [==============================] - 0s - loss: 0.4532 - acc: 0.7951 - val_loss: 0.4450 - val_acc: 0.8140
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-160.h5
+chunk number 160
+prepare data
+start training
+Train on 8161 samples, validate on 2041 samples
+Epoch 1/1
+8161/8161 [==============================] - 0s - loss: 0.4461 - acc: 0.8048 - val_loss: 0.4416 - val_acc: 0.8030
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-161.h5
+chunk number 161
+prepare data
+start training
+Train on 8124 samples, validate on 2032 samples
+Epoch 1/1
+8124/8124 [==============================] - 0s - loss: 0.4601 - acc: 0.7922 - val_loss: 0.4523 - val_acc: 0.7958
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-162.h5
+chunk number 162
+prepare data
+start training
+Train on 8201 samples, validate on 2051 samples
+Epoch 1/1
+8201/8201 [==============================] - 0s - loss: 0.4552 - acc: 0.7995 - val_loss: 0.4609 - val_acc: 0.7884
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-163.h5
+chunk number 163
+prepare data
+start training
+Train on 8076 samples, validate on 2019 samples
+Epoch 1/1
+8076/8076 [==============================] - 0s - loss: 0.4513 - acc: 0.7994 - val_loss: 0.4533 - val_acc: 0.7940
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-164.h5
+chunk number 164
+prepare data
+start training
+Train on 8096 samples, validate on 2025 samples
+Epoch 1/1
+8096/8096 [==============================] - 0s - loss: 0.4351 - acc: 0.8068 - val_loss: 0.4374 - val_acc: 0.8030
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-165.h5
+chunk number 165
+prepare data
+start training
+Train on 8221 samples, validate on 2056 samples
+Epoch 1/1
+8221/8221 [==============================] - 0s - loss: 0.4431 - acc: 0.8039 - val_loss: 0.4425 - val_acc: 0.7967
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-166.h5
+chunk number 166
+prepare data
+start training
+Train on 8110 samples, validate on 2028 samples
+Epoch 1/1
+8110/8110 [==============================] - 0s - loss: 0.4483 - acc: 0.8017 - val_loss: 0.4334 - val_acc: 0.8023
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-167.h5
+chunk number 167
+prepare data
+start training
+Train on 8108 samples, validate on 2027 samples
+Epoch 1/1
+8108/8108 [==============================] - 0s - loss: 0.4521 - acc: 0.7986 - val_loss: 0.4496 - val_acc: 0.8012
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-168.h5
+chunk number 168
+prepare data
+start training
+Train on 8160 samples, validate on 2041 samples
+Epoch 1/1
+8160/8160 [==============================] - 0s - loss: 0.4453 - acc: 0.8044 - val_loss: 0.4536 - val_acc: 0.8021
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-169.h5
+chunk number 169
+prepare data
+start training
+Train on 8068 samples, validate on 2017 samples
+Epoch 1/1
+8068/8068 [==============================] - 0s - loss: 0.4446 - acc: 0.8066 - val_loss: 0.4532 - val_acc: 0.7918
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-170.h5
+chunk number 170
+prepare data
+start training
+Train on 8172 samples, validate on 2043 samples
+Epoch 1/1
+8172/8172 [==============================] - 0s - loss: 0.4375 - acc: 0.8032 - val_loss: 0.4759 - val_acc: 0.7792
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-171.h5
+chunk number 171
+prepare data
+start training
+Train on 8185 samples, validate on 2047 samples
+Epoch 1/1
+8185/8185 [==============================] - 0s - loss: 0.4452 - acc: 0.8059 - val_loss: 0.4385 - val_acc: 0.7992
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-172.h5
+chunk number 172
+prepare data
+start training
+Train on 8143 samples, validate on 2036 samples
+Epoch 1/1
+8143/8143 [==============================] - 0s - loss: 0.4426 - acc: 0.8019 - val_loss: 0.4248 - val_acc: 0.8139
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-173.h5
+chunk number 173
+prepare data
+start training
+Train on 8080 samples, validate on 2021 samples
+Epoch 1/1
+8080/8080 [==============================] - 0s - loss: 0.4421 - acc: 0.8072 - val_loss: 0.4411 - val_acc: 0.8026
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-174.h5
+chunk number 174
+prepare data
+start training
+Train on 8154 samples, validate on 2039 samples
+Epoch 1/1
+8154/8154 [==============================] - 0s - loss: 0.4559 - acc: 0.7973 - val_loss: 0.4458 - val_acc: 0.8043
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-175.h5
+chunk number 175
+prepare data
+start training
+Train on 8096 samples, validate on 2025 samples
+Epoch 1/1
+8096/8096 [==============================] - 0s - loss: 0.4421 - acc: 0.8060 - val_loss: 0.4393 - val_acc: 0.8094
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-176.h5
+chunk number 176
+prepare data
+start training
+Train on 8206 samples, validate on 2052 samples
+Epoch 1/1
+8206/8206 [==============================] - 0s - loss: 0.4371 - acc: 0.8114 - val_loss: 0.4231 - val_acc: 0.8168
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-177.h5
+chunk number 177
+prepare data
+start training
+Train on 8092 samples, validate on 2023 samples
+Epoch 1/1
+8092/8092 [==============================] - 0s - loss: 0.4504 - acc: 0.8026 - val_loss: 0.4500 - val_acc: 0.7944
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-178.h5
+chunk number 178
+prepare data
+start training
+Train on 8099 samples, validate on 2025 samples
+Epoch 1/1
+8099/8099 [==============================] - 0s - loss: 0.4356 - acc: 0.8082 - val_loss: 0.4597 - val_acc: 0.7891
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-179.h5
+chunk number 179
+prepare data
+start training
+Train on 8137 samples, validate on 2035 samples
+Epoch 1/1
+8137/8137 [==============================] - 0s - loss: 0.4430 - acc: 0.8048 - val_loss: 0.4402 - val_acc: 0.8103
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-180.h5
+chunk number 180
+prepare data
+start training
+Train on 8232 samples, validate on 2058 samples
+Epoch 1/1
+8232/8232 [==============================] - 0s - loss: 0.4404 - acc: 0.8064 - val_loss: 0.4275 - val_acc: 0.8129
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-181.h5
+chunk number 181
+prepare data
+start training
+Train on 8115 samples, validate on 2029 samples
+Epoch 1/1
+8115/8115 [==============================] - 0s - loss: 0.4514 - acc: 0.7974 - val_loss: 0.4249 - val_acc: 0.8162
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-182.h5
+chunk number 182
+prepare data
+start training
+Train on 8135 samples, validate on 2034 samples
+Epoch 1/1
+8135/8135 [==============================] - 0s - loss: 0.4334 - acc: 0.8092 - val_loss: 0.4308 - val_acc: 0.8078
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-183.h5
+chunk number 183
+prepare data
+start training
+Train on 8210 samples, validate on 2053 samples
+Epoch 1/1
+8210/8210 [==============================] - 0s - loss: 0.4327 - acc: 0.8118 - val_loss: 0.4540 - val_acc: 0.7969
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-184.h5
+chunk number 184
+prepare data
+start training
+Train on 8025 samples, validate on 2007 samples
+Epoch 1/1
+8025/8025 [==============================] - 0s - loss: 0.4471 - acc: 0.8032 - val_loss: 0.4570 - val_acc: 0.8022
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-185.h5
+chunk number 185
+prepare data
+start training
+Train on 8202 samples, validate on 2051 samples
+Epoch 1/1
+8202/8202 [==============================] - 0s - loss: 0.4350 - acc: 0.8100 - val_loss: 0.4556 - val_acc: 0.7977
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-186.h5
+chunk number 186
+prepare data
+start training
+Train on 8096 samples, validate on 2024 samples
+Epoch 1/1
+8096/8096 [==============================] - 0s - loss: 0.4545 - acc: 0.8027 - val_loss: 0.4361 - val_acc: 0.8103
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-187.h5
+chunk number 187
+prepare data
+start training
+Train on 8208 samples, validate on 2052 samples
+Epoch 1/1
+8208/8208 [==============================] - 0s - loss: 0.4398 - acc: 0.8115 - val_loss: 0.4847 - val_acc: 0.7632
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-188.h5
+chunk number 188
+prepare data
+start training
+Train on 8237 samples, validate on 2060 samples
+Epoch 1/1
+8237/8237 [==============================] - 0s - loss: 0.4722 - acc: 0.7911 - val_loss: 0.4400 - val_acc: 0.8053
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-189.h5
+chunk number 189
+prepare data
+start training
+Train on 8025 samples, validate on 2007 samples
+Epoch 1/1
+8025/8025 [==============================] - 0s - loss: 0.4375 - acc: 0.8087 - val_loss: 0.4354 - val_acc: 0.8122
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-190.h5
+chunk number 190
+prepare data
+start training
+Train on 8133 samples, validate on 2034 samples
+Epoch 1/1
+8133/8133 [==============================] - 0s - loss: 0.4457 - acc: 0.8081 - val_loss: 0.4843 - val_acc: 0.7891
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-191.h5
+chunk number 191
+prepare data
+start training
+Train on 8112 samples, validate on 2029 samples
+Epoch 1/1
+8112/8112 [==============================] - 0s - loss: 0.4763 - acc: 0.7954 - val_loss: 0.4230 - val_acc: 0.8122
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-192.h5
+chunk number 192
+prepare data
+start training
+Train on 8126 samples, validate on 2032 samples
+Epoch 1/1
+8126/8126 [==============================] - 0s - loss: 0.4425 - acc: 0.8065 - val_loss: 0.4394 - val_acc: 0.8140
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-193.h5
+chunk number 193
+prepare data
+start training
+Train on 8153 samples, validate on 2039 samples
+Epoch 1/1
+8153/8153 [==============================] - 0s - loss: 0.4624 - acc: 0.8006 - val_loss: 0.4609 - val_acc: 0.8028
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-194.h5
+chunk number 194
+prepare data
+start training
+Train on 8198 samples, validate on 2050 samples
+Epoch 1/1
+8198/8198 [==============================] - 0s - loss: 0.4560 - acc: 0.8092 - val_loss: 0.4464 - val_acc: 0.8044
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-195.h5
+chunk number 195
+prepare data
+start training
+Train on 8049 samples, validate on 2013 samples
+Epoch 1/1
+8049/8049 [==============================] - 0s - loss: 0.4442 - acc: 0.8069 - val_loss: 0.4331 - val_acc: 0.8097
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-196.h5
+chunk number 196
+prepare data
+start training
+Train on 8133 samples, validate on 2034 samples
+Epoch 1/1
+8133/8133 [==============================] - 0s - loss: 0.4432 - acc: 0.8031 - val_loss: 0.4544 - val_acc: 0.7989
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-197.h5
+chunk number 197
+prepare data
+start training
+Train on 8017 samples, validate on 2005 samples
+Epoch 1/1
+8017/8017 [==============================] - 0s - loss: 0.4602 - acc: 0.7937 - val_loss: 0.4622 - val_acc: 0.7920
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-198.h5
+chunk number 198
+prepare data
+start training
+Train on 8179 samples, validate on 2045 samples
+Epoch 1/1
+8179/8179 [==============================] - 0s - loss: 0.4460 - acc: 0.8011 - val_loss: 0.4334 - val_acc: 0.8137
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-199.h5
+chunk number 199
+prepare data
+start training
+Train on 8136 samples, validate on 2034 samples
+Epoch 1/1
+8136/8136 [==============================] - 0s - loss: 0.4583 - acc: 0.7962 - val_loss: 0.4283 - val_acc: 0.8176
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-200.h5
+chunk number 200
+prepare data
+start training
+Train on 8131 samples, validate on 2033 samples
+Epoch 1/1
+8131/8131 [==============================] - 0s - loss: 0.4356 - acc: 0.8101 - val_loss: 0.4408 - val_acc: 0.8052
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-201.h5
+chunk number 201
+prepare data
+start training
+Train on 8212 samples, validate on 2053 samples
+Epoch 1/1
+8212/8212 [==============================] - 0s - loss: 0.4443 - acc: 0.8018 - val_loss: 0.4393 - val_acc: 0.8076
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-202.h5
+chunk number 202
+prepare data
+start training
+Train on 8149 samples, validate on 2038 samples
+Epoch 1/1
+8149/8149 [==============================] - 0s - loss: 0.4573 - acc: 0.7987 - val_loss: 0.4179 - val_acc: 0.8194
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-203.h5
+chunk number 203
+prepare data
+start training
+Train on 8243 samples, validate on 2061 samples
+Epoch 1/1
+8243/8243 [==============================] - 0s - loss: 0.4408 - acc: 0.8077 - val_loss: 0.4523 - val_acc: 0.8016
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-204.h5
+chunk number 204
+prepare data
+start training
+Train on 8216 samples, validate on 2054 samples
+Epoch 1/1
+8216/8216 [==============================] - 0s - loss: 0.4463 - acc: 0.8031 - val_loss: 0.4263 - val_acc: 0.8106
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-205.h5
+chunk number 205
+prepare data
+start training
+Train on 8068 samples, validate on 2018 samples
+Epoch 1/1
+8068/8068 [==============================] - 0s - loss: 0.4380 - acc: 0.8096 - val_loss: 0.4188 - val_acc: 0.8147
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-206.h5
+chunk number 206
+prepare data
+start training
+Train on 8148 samples, validate on 2038 samples
+Epoch 1/1
+8148/8148 [==============================] - 0s - loss: 0.4459 - acc: 0.8009 - val_loss: 0.4566 - val_acc: 0.7900
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-207.h5
+chunk number 207
+prepare data
+start training
+Train on 8148 samples, validate on 2037 samples
+Epoch 1/1
+8148/8148 [==============================] - 0s - loss: 0.4533 - acc: 0.8050 - val_loss: 0.4465 - val_acc: 0.7997
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-208.h5
+chunk number 208
+prepare data
+start training
+Train on 8125 samples, validate on 2032 samples
+Epoch 1/1
+8125/8125 [==============================] - 0s - loss: 0.4524 - acc: 0.8006 - val_loss: 0.4183 - val_acc: 0.8238
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-209.h5
+chunk number 209
+prepare data
+start training
+Train on 8178 samples, validate on 2045 samples
+Epoch 1/1
+8178/8178 [==============================] - 0s - loss: 0.4345 - acc: 0.8173 - val_loss: 0.4214 - val_acc: 0.8225
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-210.h5
+chunk number 210
+prepare data
+start training
+Train on 8131 samples, validate on 2033 samples
+Epoch 1/1
+8131/8131 [==============================] - 0s - loss: 0.4480 - acc: 0.7999 - val_loss: 0.4337 - val_acc: 0.8116
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-211.h5
+chunk number 211
+prepare data
+start training
+Train on 8215 samples, validate on 2054 samples
+Epoch 1/1
+8215/8215 [==============================] - 0s - loss: 0.4440 - acc: 0.8103 - val_loss: 0.4630 - val_acc: 0.8004
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-212.h5
+chunk number 212
+prepare data
+start training
+Train on 8225 samples, validate on 2057 samples
+Epoch 1/1
+8225/8225 [==============================] - 0s - loss: 0.4387 - acc: 0.8134 - val_loss: 0.4344 - val_acc: 0.8133
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-213.h5
+chunk number 213
+prepare data
+start training
+Train on 8164 samples, validate on 2042 samples
+Epoch 1/1
+8164/8164 [==============================] - 0s - loss: 0.4450 - acc: 0.8068 - val_loss: 0.4315 - val_acc: 0.8144
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-214.h5
+chunk number 214
+prepare data
+start training
+Train on 8084 samples, validate on 2021 samples
+Epoch 1/1
+8084/8084 [==============================] - 0s - loss: 0.4304 - acc: 0.8100 - val_loss: 0.4401 - val_acc: 0.8026
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-215.h5
+chunk number 215
+prepare data
+start training
+Train on 8078 samples, validate on 2020 samples
+Epoch 1/1
+8078/8078 [==============================] - 0s - loss: 0.4419 - acc: 0.8044 - val_loss: 0.4433 - val_acc: 0.8020
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-216.h5
+chunk number 216
+prepare data
+start training
+Train on 8144 samples, validate on 2036 samples
+Epoch 1/1
+8144/8144 [==============================] - 0s - loss: 0.4333 - acc: 0.8092 - val_loss: 0.4306 - val_acc: 0.8080
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-217.h5
+chunk number 217
+prepare data
+start training
+Train on 8159 samples, validate on 2040 samples
+Epoch 1/1
+8159/8159 [==============================] - 0s - loss: 0.4393 - acc: 0.8029 - val_loss: 0.4210 - val_acc: 0.8118
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-218.h5
+chunk number 218
+prepare data
+start training
+Train on 8209 samples, validate on 2053 samples
+Epoch 1/1
+8209/8209 [==============================] - 0s - loss: 0.4412 - acc: 0.8053 - val_loss: 0.4363 - val_acc: 0.8066
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-219.h5
+chunk number 219
+prepare data
+start training
+Train on 8085 samples, validate on 2022 samples
+Epoch 1/1
+8085/8085 [==============================] - 0s - loss: 0.4327 - acc: 0.8150 - val_loss: 0.4485 - val_acc: 0.8126
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-220.h5
+chunk number 220
+prepare data
+start training
+Train on 8033 samples, validate on 2009 samples
+Epoch 1/1
+8033/8033 [==============================] - 0s - loss: 0.4363 - acc: 0.8084 - val_loss: 0.4526 - val_acc: 0.7969
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-221.h5
+chunk number 221
+prepare data
+start training
+Train on 8089 samples, validate on 2023 samples
+Epoch 1/1
+8089/8089 [==============================] - 0s - loss: 0.4312 - acc: 0.8156 - val_loss: 0.4365 - val_acc: 0.8092
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-222.h5
+chunk number 222
+prepare data
+start training
+Train on 8167 samples, validate on 2042 samples
+Epoch 1/1
+8167/8167 [==============================] - 0s - loss: 0.4268 - acc: 0.8150 - val_loss: 0.4497 - val_acc: 0.7958
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-223.h5
+chunk number 223
+prepare data
+start training
+Train on 8140 samples, validate on 2035 samples
+Epoch 1/1
+8140/8140 [==============================] - 0s - loss: 0.4478 - acc: 0.8070 - val_loss: 0.4240 - val_acc: 0.8147
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-224.h5
+chunk number 224
+prepare data
+start training
+Train on 8134 samples, validate on 2034 samples
+Epoch 1/1
+8134/8134 [==============================] - 0s - loss: 0.4331 - acc: 0.8051 - val_loss: 0.4044 - val_acc: 0.8387
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-225.h5
+chunk number 225
+prepare data
+start training
+Train on 8125 samples, validate on 2032 samples
+Epoch 1/1
+8125/8125 [==============================] - 0s - loss: 0.4404 - acc: 0.8066 - val_loss: 0.4376 - val_acc: 0.8120
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-226.h5
+chunk number 226
+prepare data
+start training
+Train on 8052 samples, validate on 2014 samples
+Epoch 1/1
+8052/8052 [==============================] - 0s - loss: 0.4372 - acc: 0.8063 - val_loss: 0.4231 - val_acc: 0.8158
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-227.h5
+chunk number 227
+prepare data
+start training
+Train on 8127 samples, validate on 2032 samples
+Epoch 1/1
+8127/8127 [==============================] - 0s - loss: 0.4393 - acc: 0.8138 - val_loss: 0.4322 - val_acc: 0.8115
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-228.h5
+chunk number 228
+prepare data
+start training
+Train on 8288 samples, validate on 2072 samples
+Epoch 1/1
+8288/8288 [==============================] - 0s - loss: 0.4367 - acc: 0.8032 - val_loss: 0.4368 - val_acc: 0.8108
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-229.h5
+chunk number 229
+prepare data
+start training
+Train on 8070 samples, validate on 2018 samples
+Epoch 1/1
+8070/8070 [==============================] - 0s - loss: 0.4325 - acc: 0.8079 - val_loss: 0.4427 - val_acc: 0.8003
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-230.h5
+chunk number 230
+prepare data
+start training
+Train on 8212 samples, validate on 2053 samples
+Epoch 1/1
+8212/8212 [==============================] - 0s - loss: 0.4285 - acc: 0.8130 - val_loss: 0.4273 - val_acc: 0.8110
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-231.h5
+chunk number 231
+prepare data
+start training
+Train on 8086 samples, validate on 2022 samples
+Epoch 1/1
+8086/8086 [==============================] - 0s - loss: 0.4356 - acc: 0.8089 - val_loss: 0.4537 - val_acc: 0.8007
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-232.h5
+chunk number 232
+prepare data
+start training
+Train on 8124 samples, validate on 2031 samples
+Epoch 1/1
+8124/8124 [==============================] - 0s - loss: 0.4307 - acc: 0.8138 - val_loss: 0.4279 - val_acc: 0.8159
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-233.h5
+chunk number 233
+prepare data
+start training
+Train on 8172 samples, validate on 2044 samples
+Epoch 1/1
+8172/8172 [==============================] - 0s - loss: 0.4271 - acc: 0.8160 - val_loss: 0.4231 - val_acc: 0.8214
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-234.h5
+chunk number 234
+prepare data
+start training
+Train on 8087 samples, validate on 2022 samples
+Epoch 1/1
+8087/8087 [==============================] - 0s - loss: 0.4261 - acc: 0.8141 - val_loss: 0.4419 - val_acc: 0.8037
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-235.h5
+chunk number 235
+prepare data
+start training
+Train on 8074 samples, validate on 2019 samples
+Epoch 1/1
+8074/8074 [==============================] - 0s - loss: 0.4192 - acc: 0.8172 - val_loss: 0.4485 - val_acc: 0.8009
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-236.h5
+chunk number 236
+prepare data
+start training
+Train on 8123 samples, validate on 2031 samples
+Epoch 1/1
+8123/8123 [==============================] - 0s - loss: 0.4423 - acc: 0.8052 - val_loss: 0.4367 - val_acc: 0.8045
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-237.h5
+chunk number 237
+prepare data
+start training
+Train on 8125 samples, validate on 2032 samples
+Epoch 1/1
+8125/8125 [==============================] - 0s - loss: 0.4422 - acc: 0.8133 - val_loss: 0.4235 - val_acc: 0.8194
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-238.h5
+chunk number 238
+prepare data
+start training
+Train on 8258 samples, validate on 2065 samples
+Epoch 1/1
+8258/8258 [==============================] - 0s - loss: 0.4266 - acc: 0.8140 - val_loss: 0.4278 - val_acc: 0.8140
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-239.h5
+chunk number 239
+prepare data
+start training
+Train on 8105 samples, validate on 2027 samples
+Epoch 1/1
+8105/8105 [==============================] - 0s - loss: 0.4354 - acc: 0.8079 - val_loss: 0.4236 - val_acc: 0.8160
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-240.h5
+chunk number 240
+prepare data
+start training
+Train on 8100 samples, validate on 2025 samples
+Epoch 1/1
+8100/8100 [==============================] - 0s - loss: 0.4089 - acc: 0.8242 - val_loss: 0.4168 - val_acc: 0.8212
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-241.h5
+chunk number 241
+prepare data
+start training
+Train on 8173 samples, validate on 2044 samples
+Epoch 1/1
+8173/8173 [==============================] - 0s - loss: 0.4350 - acc: 0.8117 - val_loss: 0.4278 - val_acc: 0.8131
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-242.h5
+chunk number 242
+prepare data
+start training
+Train on 8125 samples, validate on 2032 samples
+Epoch 1/1
+8125/8125 [==============================] - 0s - loss: 0.4351 - acc: 0.8134 - val_loss: 0.4128 - val_acc: 0.8204
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-243.h5
+chunk number 243
+prepare data
+start training
+Train on 8104 samples, validate on 2026 samples
+Epoch 1/1
+8104/8104 [==============================] - 0s - loss: 0.4321 - acc: 0.8139 - val_loss: 0.4348 - val_acc: 0.8085
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-244.h5
+chunk number 244
+prepare data
+start training
+Train on 8084 samples, validate on 2022 samples
+Epoch 1/1
+8084/8084 [==============================] - 0s - loss: 0.4215 - acc: 0.8189 - val_loss: 0.4273 - val_acc: 0.8170
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-245.h5
+chunk number 245
+prepare data
+start training
+Train on 8188 samples, validate on 2048 samples
+Epoch 1/1
+8188/8188 [==============================] - 0s - loss: 0.4242 - acc: 0.8164 - val_loss: 0.3974 - val_acc: 0.8325
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-246.h5
+chunk number 246
+prepare data
+start training
+Train on 8100 samples, validate on 2025 samples
+Epoch 1/1
+8100/8100 [==============================] - 0s - loss: 0.4301 - acc: 0.8127 - val_loss: 0.4373 - val_acc: 0.8119
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-247.h5
+chunk number 247
+prepare data
+start training
+Train on 8128 samples, validate on 2033 samples
+Epoch 1/1
+8128/8128 [==============================] - 0s - loss: 0.4313 - acc: 0.8108 - val_loss: 0.4230 - val_acc: 0.8141
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-248.h5
+chunk number 248
+prepare data
+start training
+Train on 8099 samples, validate on 2025 samples
+Epoch 1/1
+8099/8099 [==============================] - 0s - loss: 0.4162 - acc: 0.8195 - val_loss: 0.4416 - val_acc: 0.8044
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-249.h5
+chunk number 249
+prepare data
+start training
+Train on 8121 samples, validate on 2031 samples
+Epoch 1/1
+8121/8121 [==============================] - 0s - loss: 0.4172 - acc: 0.8232 - val_loss: 0.4002 - val_acc: 0.8321
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-250.h5
+saving fitted model to /users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-final.h5

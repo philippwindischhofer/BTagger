@@ -1,0 +1,1 @@
+lstm with 1 layers, 128 nodes each, only one epoch per batch, 250 epochs
