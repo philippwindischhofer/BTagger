@@ -1,0 +1,136 @@
+\documentclass{beamer}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage{braket}
+\usepackage{mathtools} % Needed for \prescript
+\usetheme{Boadilla}
+\setbeamertemplate{navigation symbols}{}
+
+\newcommand{\tot}{\mathrm{tot}}
+\DeclareMathOperator{\Tr}{Tr}
+
+%Information to be included in the title page:
+\title{LSTM Tagger}
+\author{Philipp Windischhofer}
+%\institute{ETH Zürich}
+\date{\today}
+  
+\begin{document}
+ 
+\frame{\titlepage}
+
+%\begin{frame}
+%\frametitle{Table of Contents}
+%\tableofcontents
+%\end{frame}
+
+\begin{frame}
+  \frametitle{The Setup}
+
+  \begin{block}{Goal}
+    Train a binary neural-network based classifier that can distinguish between $b$- and non-$b$-jets, using the raw jet data as input.
+  \end{block}
+
+  \begin{itemize}
+  \item use \textsl{tracks} as the primary source of information
+  \item number of tracks is unknown a-priori $\rightarrow$ cannot use an architecture that expects a fixed number of inputs
+  \item currently looking into recurrent neural networks / LSTM networks
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Recurrent Neural Networks}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Workflow}
+  \framesubtitle{Training}
+  \begin{itemize}
+  \item match tracks to their associated jets (contained in different ROOT trees)
+  \item for each track in the jet, feed all 8 available track parameters into the classifier network during training
+    \begin{itemize}
+      \item use $p_T$ ordering, i.e.~hardest track first
+    \end{itemize}
+  \item supervised training: provide a binary (0/1) output value for each jet (from MC)
+  \end{itemize}
+
+  Now running on Piz Daint:
+  \begin{itemize}
+  \item roughly 2-3 $\times$ improvement in execution speed compared to PSI/Tier-3
+  \item limited by Jet-Track-matching, which is handled by the CPU
+  \item possible workaround: train multiple classifiers during the same run ``in parallel''
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Workflow}
+  \framesubtitle{Evaluation}
+  \begin{itemize}
+  \item compare performance to cMVA tagger as ``gold-standard''
+  \item obtain ROC curves for both classifiers, correlation plots of the outputs
+  \item currently: validation data is disjoint from training data, but from the same MC-run (i.e.~contains a similar event signature)
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results so far}
+  \begin{itemize}
+  \item trained a number of LSTM networks, scanned the hyperparameters:
+    \begin{itemize}
+    \item number of nodes in each layer
+    \item number of layers
+    \item number of training epochs
+    \end{itemize}
+  \end{itemize}
+  
+  Details of the training:
+  \begin{itemize}
+  \item read training data in chunks of 10k jets
+  \item use 8k jets for training, 2k jets to monitor performance during each epoch
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 1 layer}
+
+  \begin{itemize}
+  \item AUC(cMVA) = asdf
+  \item AUC(RNN) = asdf
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 3 layers}
+
+  \begin{itemize}
+  \item AUC(cMVA) = asdf
+  \item AUC(RNN) = asdf
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{128 nodes / layer, 1 layer}
+
+  \begin{itemize}
+  \item AUC(cMVA) = asdf
+  \item AUC(RNN) = asdf
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Future Experiments}
+
+  \begin{itemize}
+    \item 
+    \item try removing track parameters to see how performance degrades
+    \item more sophisticated preprocessing?
+    \item different representation (other than the raw track data)?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+\end{frame}
+ 
+\end{document}
