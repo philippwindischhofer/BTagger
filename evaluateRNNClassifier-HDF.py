@@ -50,7 +50,10 @@ def build_roc(response_b, response_nb):
             efficiency = np.append(efficiency, correct_b / len(response_b))
             misid_prob = np.append(misid_prob, misid_b / len(response_nb))
 
-    return misid_prob, efficiency
+    # compute AUC
+    auc = np.trapz(y = efficiency, x = misid_prob)
+
+    return misid_prob, efficiency, abs(auc)
 
 # In[3]:
 
@@ -165,9 +168,12 @@ def main(argv):
         print("evaluating cMVA")
         response_b_cmva = np.array([cur[0] for cur in jets_b])
         response_nb_cmva = np.array([cur[0] for cur in non_b_jets])
-        RNN_misid, RNN_efficiency = build_roc(response_b, response_nb)
-        cMVA_misid, cMVA_efficiency = build_roc(response_b_cmva, response_nb_cmva)
+        RNN_misid, RNN_efficiency, RNN_auc = build_roc(response_b, response_nb)
+        cMVA_misid, cMVA_efficiency, cMVA_auc = build_roc(response_b_cmva, response_nb_cmva)
         
+        print("AUC(cMVA) = " + str(cMVA_auc))
+        print("AUC(RNN) = " + str(RNN_auc))
+
         # In[8]:
 
         # In[9]:

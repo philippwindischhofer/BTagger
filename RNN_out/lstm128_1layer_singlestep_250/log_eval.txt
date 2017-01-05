@@ -1,0 +1,9 @@
+loading model from ./RNN_out/lstm128_1layer_singlestep_250/model-final.h5
+loading validation data
+assembling jets
+sorting jets
+evaluating the model
+evaluating cMVA
+AUC(cMVA) = 0.923336258145
+AUC(RNN) = 0.873740719421
+plotting...
