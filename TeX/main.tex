@@ -5,6 +5,7 @@
 \usepackage{mathtools} % Needed for \prescript
 \usetheme{Boadilla}
 \setbeamertemplate{navigation symbols}{}
+\usepackage{subfig}
 
 \newcommand{\tot}{\mathrm{tot}}
 \DeclareMathOperator{\Tr}{Tr}
@@ -94,6 +95,41 @@
 \begin{frame}
   \frametitle{64 nodes / layer, 1 layer}
 
+    \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+  
+  \begin{itemize}
+  \item AUC(cMVA) = asdf
+  \item AUC(RNN) = asdf
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 1 layer}
+    \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 3 layers}
+
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}\label{a}}	
+    \caption{test}
+  \end{figure}
+
   \begin{itemize}
   \item AUC(cMVA) = asdf
   \item AUC(RNN) = asdf
@@ -102,6 +138,14 @@
 
 \begin{frame}
   \frametitle{64 nodes / layer, 3 layers}
+
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
 
   \begin{itemize}
   \item AUC(cMVA) = asdf
@@ -112,11 +156,34 @@
 \begin{frame}
   \frametitle{128 nodes / layer, 1 layer}
 
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+  
   \begin{itemize}
   \item AUC(cMVA) = asdf
   \item AUC(RNN) = asdf
   \end{itemize}
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{128 nodes / layer, 1 layer}
+
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Future Experiments}
