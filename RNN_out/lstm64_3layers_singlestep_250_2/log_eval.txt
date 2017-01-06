@@ -1,9 +1,9 @@
-loading model from ./RNN_out/lstm64_3layers_singlestep_250_2/model-143.h5
+loading model from ./RNN_out/lstm64_3layers_singlestep_250_2/model-248.h5
 loading validation data
 assembling jets
 sorting jets
 evaluating the model
 evaluating cMVA
 AUC(cMVA) = 0.923336258145
-AUC(RNN) = 0.860976514097
+AUC(RNN) = 0.870396915319
 plotting...

@@ -79,7 +79,7 @@ def main(argv):
 
     #model = RNN_classifier()
     print("loading model back for further training")
-    model = load_model('/users/phwindis/BTagger/RNN_out/lstm128_1layer_singlestep_250/model-final.h5')
+    model = load_model('/users/phwindis/BTagger/RNN_out/lstm64_3layers_singlestep_250/model-final.h5')
 
     loss_history = []
     loss_val_history = []

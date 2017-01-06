@@ -1,0 +1,1 @@
+lstm with 3 layers, 64 nodes each, only one epoch per batch, 250 epochs, trained on 11.h5 for another 250 epochs
