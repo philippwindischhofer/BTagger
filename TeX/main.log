@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  7 JAN 2017 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  7 JAN 2017 22:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,6 +1137,42 @@ LaTeX Warning: Label `b' multiply defined.
 
 LaTeX Warning: Label `sub@b' multiply defined.
 
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `sub@a' multiply defined.
+
+
+LaTeX Warning: Label `b' multiply defined.
+
+
+LaTeX Warning: Label `sub@b' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `sub@a' multiply defined.
+
+
+LaTeX Warning: Label `b' multiply defined.
+
+
+LaTeX Warning: Label `sub@b' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `sub@a' multiply defined.
+
+
+LaTeX Warning: Label `b' multiply defined.
+
+
+LaTeX Warning: Label `sub@b' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1446,12 +1482,13 @@ l.135 \end{frame}
                   [9
 
 ]
-File: ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf Graphic file (type p
-df)
-
-<use ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf>
-Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf u
-sed on input line 153.
+<../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf, id=229, 722.7pt x 433.6
+2pt>
+File: ../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf Graphic file (type 
+pdf)
+ <use ../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf 
+used on input line 153.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
@@ -1459,11 +1496,13 @@ already used, duplicate ignored
                    \relax 
 l.153 \end{frame}
                  
-File: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf Graphic file (type
- pdf)
- <use ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf>
-Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
- used on input line 153.
+<../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf, id=230, 722.7pt x 433
+.62pt>
+File: ../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf Graphic file (typ
+e pdf)
+ <use ../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pd
+f used on input line 153.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
@@ -1472,35 +1511,107 @@ already used, duplicate ignored
 l.153 \end{frame}
                   [10
 
-]
-<../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf, id=235, 722.7pt x 4
-33.62pt>
-File: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf Graphic file (t
-ype pdf)
- <use ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf>
-Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.
-pdf used on input line 170.
+ <../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf> <../RNN_out/lstm64_3la
+yers_singlestep_250_2/ROC-plot.pdf
+
+pdfTeX warning: pdflatex (file ../RNN_out/lstm64_3layers_singlestep_250_2/ROC-p
+lot.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+>] <../RNN_out/lstm64_3layers/loss-history.pdf, id=310, 722.7pt x 433.62pt>
+File: ../RNN_out/lstm64_3layers/loss-history.pdf Graphic file (type pdf)
+
+<use ../RNN_out/lstm64_3layers/loss-history.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers/loss-history.pdf used on inp
+ut line 173.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \end{frame}
+l.173 \end{frame}
                  
-<../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf, id=236, 722.7pt x
- 433.62pt>
-File: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf Graphic file 
-(type pdf)
- <use ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf>
-Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-histor
-y.pdf used on input line 170.
+<../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf, id=311, 722.7pt x 433.62pt>
+File: ../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf Graphic file (type pdf)
+
+<use ../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf used 
+on input line 173.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 \end{frame}
+l.173 \end{frame}
                   [11
+
+ <../RNN_out/lstm64_3layers/loss-history.pdf> <../RNN_out/lstm64_3layers/ROC-pl
+ot-permanent.pdf
+
+pdfTeX warning: pdflatex (file ../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf, id=387, 722.7pt x 433.62pt>
+File: ../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf Graphic file (type pdf)
+
+<use ../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf used 
+on input line 185.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{frame}
+                 
+<../RNN_out/lstm64_3layers/ROC-scatter-background.pdf, id=388, 722.7pt x 433.62
+pt>
+File: ../RNN_out/lstm64_3layers/ROC-scatter-background.pdf Graphic file (type p
+df)
+ <use ../RNN_out/lstm64_3layers/ROC-scatter-background.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_3layers/ROC-scatter-background.pdf u
+sed on input line 185.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.185 \end{frame}
+                  [12
+
+ <../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf> <../RNN_out/lstm64_3layers/
+ROC-scatter-background.pdf
+
+pdfTeX warning: pdflatex (file ../RNN_out/lstm64_3layers/ROC-scatter-background
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf, id=459, 722.7pt x 4
+33.62pt>
+File: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf Graphic file (t
+ype pdf)
+ <use ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf>
+Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.
+pdf used on input line 199.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.199 \end{frame}
+                 
+<../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf, id=460, 722.7pt x
+ 433.62pt>
+File: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf Graphic file 
+(type pdf)
+ <use ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf>
+Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-histor
+y.pdf used on input line 199.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.199 \end{frame}
+                  [13
 
  <../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf> <../RNN_out/lstm12
 8_1layer_singlestep_250_2/loss-history.pdf
@@ -1509,44 +1620,83 @@ pdfTeX warning: pdflatex (file ../RNN_out/lstm128_1layer_singlestep_250_2/loss-
 history.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf, id=304, 722.7pt x 433.6
+<../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf, id=529, 722.7pt x 433.6
 2pt>
 File: ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf Graphic file (type 
 pdf)
  <use ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf 
-used on input line 184.
+used on input line 218.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184 \end{frame}
+l.218 \end{frame}
                  
-<../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf, id=305, 722.7pt x 433
-.62pt>
-File: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf Graphic file (typ
-e pdf)
- <use ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf>
-Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pd
-f used on input line 184.
+<../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf, id=530, 722
+.7pt x 433.62pt>
+File: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf Graphic
+ file (type pdf)
+
+<use ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf>
+Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-pe
+rmanent.pdf used on input line 218.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.184 \end{frame}
-                  [12
+l.218 \end{frame}
+                  [14
 
  <../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf> <../RNN_out/lstm128_1l
-ayer_singlestep_250_2/ROC-plot.pdf
+ayer_singlestep_250_2/ROC-plot-permanent.pdf
 
 pdfTeX warning: pdflatex (file ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-p
-lot.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
->] [13
+lot-permanent.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+>]
+<../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf, id=610, 722
+.7pt x 433.62pt>
+File: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf Graphic
+ file (type pdf)
 
-] [14
+<use ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf>
+Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter
+-signal.pdf used on input line 230.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.230 \end{frame}
+                 
+<../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf, id=611,
+ 722.7pt x 433.62pt>
+File: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf Gra
+phic file (type pdf)
+
+<use ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf>
+Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter
+-background.pdf used on input line 230.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.230 \end{frame}
+                  [15
+
+ <../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf> <../RNN_ou
+t/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf
+
+pdfTeX warning: pdflatex (file ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-s
+catter-background.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+>] [16
+
+] [17
 
 ]
 \tf@nav=\write6
@@ -1558,11 +1708,11 @@ e
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1573,13 +1723,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
  ) 
 Here is how much of TeX's memory you used:
- 18941 strings out of 493049
- 357854 string characters out of 6140511
+ 18991 strings out of 493049
+ 360079 string characters out of 6140511
  430237 words of memory out of 5000000
- 21991 multiletter control sequences out of 15000+600000
+ 22029 multiletter control sequences out of 15000+600000
  14853 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,384b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1590,10 +1740,10 @@ ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (14 pages, 213163 bytes).
+Output written on main.pdf (17 pages, 1856263 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

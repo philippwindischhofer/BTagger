@@ -139,8 +139,8 @@
 
   \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf}\label{b}}
 
     \caption{test}
   \end{figure}
@@ -151,6 +151,39 @@
   \end{itemize}
   
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 3 layers}
+  \framesubtitle{A different training strategy}
+  Use 40 training epochs per 10k chunk:
+
+    \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/loss-history.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf}\label{b}}
+
+    \caption{test}
+    \end{figure}
+
+    \begin{itemize}
+    \item AUC(cMVA) = 0.9233
+    \item AUC(RNN) = 0.888
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{64 nodes / layer, 3 layers}
+  \framesubtitle{Output compared to cMVA}
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-scatter-background.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{128 nodes / layer, 1 layer}
@@ -172,7 +205,7 @@
   \begin{figure}[htb]
     \centering
     \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf}\label{b}}
 
     \caption{test}
   \end{figure}
@@ -184,20 +217,40 @@
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{128 nodes / layer, 1 layer}
+  \framesubtitle{Output compared to cMVA}
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf}\label{b}}
+
+    \caption{test}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Conclusions}
+  \begin{itemize}
+  \item basic infrastructure seems to be in place and working
+  \item classifier performance is very similar across the different networks that were evaluated
+    \begin{itemize}
+      \item training just not complete? Use still more epochs even if loss doesn't seem to improve much anymore?
+      \item or is performance limited by the data representation / preprocessing rather than the network architecture?
+    \end{itemize}
+  \end{itemize}
+\end{frame}
 
 \begin{frame}
   \frametitle{Future Experiments}
 
   \begin{itemize}
-    \item 
-    \item try removing track parameters to see how performance degrades
-    \item more sophisticated preprocessing?
-    \item different representation (other than the raw track data)?
+  \item more sophisticated preprocessing?
+  \item different representation (other than the raw track data)?
+  \item try removing individual track parameters to see how performance degrades
   \end{itemize}
+  
 \end{frame}
 
-\begin{frame}
-  \frametitle{Conclusions}
-\end{frame}
- 
 \end{document}
