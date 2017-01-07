@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1483825003 "main.tex" "main.pdf" "main" 1483825003
+["pdflatex"] 1483825726 "main.tex" "main.pdf" "main" 1483825749
   "../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf" 1483636986 21032 3a772f38862b2d6b15419af31e8df146 ""
   "../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf" 1483563346 15528 1af9700601b1ddd58e11c7fc54d1531c ""
   "../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf" 1483824750 20328 cc4ef749dea044c9f76b6b86e5772870 ""
@@ -209,15 +209,15 @@
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1479649818 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1479649825 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1482505342 1848177 b567b59fd9d62063141ec49d863a0fc4 ""
-  "main.aux" 1483825003 6009 8a92a8ad97e42d512ab14a8f42763407 ""
-  "main.nav" 1483825003 1799 89d606654b5b1772c2b935ff035644a7 ""
-  "main.out" 1483825003 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1483824963 7728 218995dde17a6db3c6399a909d1b0953 ""
+  "main.aux" 1483825726 5711 b2dbd6fdebb98634eb8c260194257c6b ""
+  "main.nav" 1483825726 1799 89d606654b5b1772c2b935ff035644a7 ""
+  "main.out" 1483825726 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1483825723 8623 df768c8a1358449894bd87e0b3cc45e7 ""
   (generated)
-  "main.pdf"
-  "main.snm"
   "main.log"
-  "main.out"
-  "main.toc"
   "main.nav"
+  "main.out"
   "main.aux"
+  "main.snm"
+  "main.toc"
+  "main.pdf"

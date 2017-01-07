@@ -7,6 +7,9 @@
 \setbeamertemplate{navigation symbols}{}
 \usepackage{subfig}
 
+\captionsetup[subfigure]{labelformat=empty}
+\captionsetup[figure]{labelformat=empty}
+
 \newcommand{\tot}{\mathrm{tot}}
 \DeclareMathOperator{\Tr}{Tr}
 
@@ -97,10 +100,10 @@
 
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf}}
 
-    \caption{test}
+    \caption{Loss function (binary cross-entropy) for epochs 1-250 (left) and 250-500 (right).}
   \end{figure}
 
 \end{frame}
@@ -109,12 +112,13 @@
   \frametitle{64 nodes / layer, 1 layer}
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf}\label{b}}
 
-    \caption{test}
+    \caption{ROC after 250 (left) and 500 training epochs (right) in comparison with the cMVA tagger.}
     \end{figure}
 
+  Area under curve:
   \begin{itemize}
   \item AUC(cMVA) = 0.9233
   \item AUC(RNN) = 0.8794
@@ -127,9 +131,9 @@
 
   \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}\label{a}}
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf}\label{a}}	
-    \caption{test}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}\label{a}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf}\label{a}}	
+    \caption{Loss function (binary cross-entropy) for epochs 1-250 (left) and 250-500 (right).}
   \end{figure}
 
 \end{frame}
@@ -139,12 +143,13 @@
 
   \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_3layers_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_3layers_singlestep_250_2/ROC-plot.pdf}\label{b}}
 
-    \caption{test}
+    \caption{ROC after 250 (left) and 500 training epochs (right) in comparison with the cMVA tagger.}
   \end{figure}
 
+  Area under curve:
   \begin{itemize}
   \item AUC(cMVA) = 0.9233
   \item AUC(RNN) = 0.8704
@@ -156,16 +161,17 @@
 \begin{frame}
   \frametitle{64 nodes / layer, 3 layers}
   \framesubtitle{A different training strategy}
-  Use 40 training epochs per 10k chunk:
+  Use 40 training epochs per 10k chunk (35 chunks in total):
 
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/loss-history.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_3layers/loss-history.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_3layers/ROC-plot-permanent.pdf}\label{b}}
 
-    \caption{test}
+    \caption{Loss function evolution (left) and ROC plot after completed training (right).}
     \end{figure}
 
+    Area under curve:
     \begin{itemize}
     \item AUC(cMVA) = 0.9233
     \item AUC(RNN) = 0.888
@@ -180,7 +186,7 @@
     \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-scatter-signal.pdf}\label{a}}	
     \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm64_3layers/ROC-scatter-background.pdf}\label{b}}
 
-    \caption{test}
+    \caption{Output of the LSTM tagger in comparison with the cMVA output: signal events shown left, background right.}
   \end{figure}
 \end{frame}
 
@@ -193,7 +199,7 @@
     \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf}\label{a}}	
     \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf}\label{b}}
 
-    \caption{test}
+    \caption{Loss function (binary cross-entropy) for epochs 1-250 (left) and 250-500 (right).}
   \end{figure}
 
 \end{frame}
@@ -204,10 +210,10 @@
 
   \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot-permanent.pdf}\label{b}}
 
-    \caption{test}
+    \caption{ROC after 250 (left) and 500 training epochs (right) in comparison with the cMVA tagger.}
   \end{figure}
 
   \begin{itemize}
@@ -222,10 +228,10 @@
   \framesubtitle{Output compared to cMVA}
   \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf}\label{a}}	
-    \subfloat[][]{\includegraphics[width =0.45\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf}\label{b}}
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-signal.pdf}\label{a}}	
+    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm128_1layer_singlestep_250_2/ROC-scatter-background.pdf}\label{b}}
 
-    \caption{test}
+    \caption{Output of the LSTM tagger in comparison with the cMVA output: signal events shown left, background right.}
   \end{figure}
 \end{frame}
 
