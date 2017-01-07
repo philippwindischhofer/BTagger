@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  5 JAN 2017 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  7 JAN 2017 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1102,6 +1102,12 @@ LaTeX Warning: Label `a' multiply defined.
 LaTeX Warning: Label `sub@a' multiply defined.
 
 
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `sub@a' multiply defined.
+
+
 LaTeX Warning: Label `b' multiply defined.
 
 
@@ -1356,7 +1362,7 @@ File: ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf Graphic file (ty
 pe pdf)
  <use ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250/loss-history.p
-df used on input line 110.
+df used on input line 106.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 
 <../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf, id=72, 722.7pt x 4
@@ -1365,7 +1371,7 @@ File: ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf Graphic file (
 type pdf)
  <use ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history
-.pdf used on input line 110.
+.pdf used on input line 106.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 
 [7
@@ -1383,13 +1389,13 @@ File: ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf Graphic file (type p
 df)
  <use ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf u
-sed on input line 122.
+sed on input line 123.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \end{frame}
+l.123 \end{frame}
                  
 <../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf, id=143, 722.7pt x 433.
 62pt>
@@ -1397,13 +1403,13 @@ File: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf Graphic file (type
  pdf)
  <use ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
- used on input line 122.
+ used on input line 123.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.122 \end{frame}
+l.123 \end{frame}
                   [8
 
  <../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf> <../RNN_out/lstm64_1lay
@@ -1417,13 +1423,26 @@ File: ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf Graphic file (ty
 pe pdf)
  <use ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250/loss-history.p
-df used on input line 137.
+df used on input line 135.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 \end{frame}
+l.135 \end{frame}
+                 
+File: ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf Graphic file (
+type pdf)
+
+<use ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf>
+Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history
+.pdf used on input line 135.
+(pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 \end{frame}
                   [9
 
 ]
@@ -1432,25 +1451,25 @@ df)
 
 <use ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf u
-sed on input line 154.
+sed on input line 153.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \end{frame}
+l.153 \end{frame}
                  
 File: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf Graphic file (type
  pdf)
  <use ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
- used on input line 154.
+ used on input line 153.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \end{frame}
+l.153 \end{frame}
                   [10
 
 ]
@@ -1460,13 +1479,13 @@ File: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf Graphic file (t
 ype pdf)
  <use ../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf>
 Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250/loss-history.
-pdf used on input line 171.
+pdf used on input line 170.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \end{frame}
+l.170 \end{frame}
                  
 <../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf, id=236, 722.7pt x
  433.62pt>
@@ -1474,13 +1493,13 @@ File: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf Graphic file
 (type pdf)
  <use ../RNN_out/lstm128_1layer_singlestep_250_2/loss-history.pdf>
 Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/loss-histor
-y.pdf used on input line 171.
+y.pdf used on input line 170.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \end{frame}
+l.170 \end{frame}
                   [11
 
  <../RNN_out/lstm128_1layer_singlestep_250/loss-history.pdf> <../RNN_out/lstm12
@@ -1496,13 +1515,13 @@ File: ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf Graphic file (type
 pdf)
  <use ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf 
-used on input line 185.
+used on input line 184.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{a}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \end{frame}
+l.184 \end{frame}
                  
 <../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf, id=305, 722.7pt x 433
 .62pt>
@@ -1510,13 +1529,13 @@ File: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf Graphic file (typ
 e pdf)
  <use ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pdf>
 Package pdftex.def Info: ../RNN_out/lstm128_1layer_singlestep_250_2/ROC-plot.pd
-f used on input line 185.
+f used on input line 184.
 (pdftex.def)             Requested size: 154.03183pt x 92.41927pt.
 pdfTeX warning (ext4): destination with the same identifier (name{b}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \end{frame}
+l.184 \end{frame}
                   [12
 
  <../RNN_out/lstm128_1layer_singlestep_250/ROC-plot.pdf> <../RNN_out/lstm128_1l
@@ -1539,11 +1558,11 @@ e
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1554,7 +1573,7 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
  18941 strings out of 493049
@@ -1571,7 +1590,7 @@ ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (14 pages, 213060 bytes).
+Output written on main.pdf (14 pages, 213163 bytes).
 PDF statistics:
  434 PDF objects out of 1000 (max. 8388607)
  165 compressed objects within 2 object streams

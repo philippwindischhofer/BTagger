@@ -354,6 +354,8 @@ INPUT ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf
+INPUT ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf
+INPUT ../RNN_out/lstm64_1layer_singlestep_250_2/loss-history.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250/ROC-plot.pdf
 INPUT ../RNN_out/lstm64_1layer_singlestep_250_2/ROC-plot.pdf
