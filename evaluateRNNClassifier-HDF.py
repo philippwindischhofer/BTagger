@@ -66,8 +66,8 @@ def main(argv):
     # In[4]:
 
     # load a batch of validation data
-    batch_size_jets = 120000
-    batch_size_tracks = 520000
+    batch_size_jets = 60000
+    batch_size_tracks = 250000
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
@@ -191,17 +191,35 @@ def main(argv):
         fig.savefig(argv[1] + '-plot.pdf')
 
         fig = plt.figure(figsize=(10,6))
-        plt.scatter(response_b_cmva, response_b, color = 'g', s = 2, label = "b jets")
-        plt.scatter(response_nb_cmva, response_nb, color = 'r', s = 2, label = "non b jets")
+        plt.scatter(response_b_cmva, response_b, color = 'g', s = 1.5, label = "b jets")
+        plt.scatter(response_nb_cmva, response_nb, color = 'r', s = 1.5, label = "non b jets")
         axes = plt.gca()
         axes.set_ylim([-0.1,1])
         axes.set_xlim([-1,1])
         plt.legend(loc = "lower left")
         plt.xlabel('cMVA output')
         plt.ylabel('LSTM output')
-        plt.savefig(argv[1] + '-scatter.pdf')
+        plt.savefig(argv[1] + '-scatter-combined.pdf')
 
-        # In[10]:
+        fig = plt.figure(figsize=(10,6))
+        plt.scatter(response_b_cmva, response_b, color = 'b', s = 1.5, label = "b jets")
+        axes = plt.gca()
+        axes.set_ylim([-0.1,1])
+        axes.set_xlim([-1,1])
+        plt.legend(loc = "lower left")
+        plt.xlabel('cMVA output')
+        plt.ylabel('LSTM output')
+        plt.savefig(argv[1] + '-scatter-signal.pdf')
+
+        fig = plt.figure(figsize=(10,6))
+        plt.scatter(response_nb_cmva, response_nb, color = 'b', s = 1.5, label = "non b jets")
+        axes = plt.gca()
+        axes.set_ylim([-0.1,1])
+        axes.set_xlim([-1,1])
+        plt.legend(loc = "lower left")
+        plt.xlabel('cMVA output')
+        plt.ylabel('LSTM output')
+        plt.savefig(argv[1] + '-scatter-background.pdf')
 
         # can now plot the curve and save the values to a file
         plotdata = np.vstack([RNN_misid, RNN_efficiency])
