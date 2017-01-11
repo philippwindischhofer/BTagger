@@ -20,9 +20,9 @@ from keras.layers import LSTM
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(128, input_shape = (None, 8)))
-    #model.add(LSTM(64, return_sequences = True))
-    #model.add(LSTM(64))
+    model.add(LSTM(64, return_sequences = True, input_shape = (None, 6)))
+    model.add(LSTM(64, return_sequences = True))
+    model.add(LSTM(64))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
     model.add(Dense(1, activation='sigmoid'))
@@ -44,11 +44,11 @@ def prepare_training_data(jet_list, label, set_tracks):
     
     # zero-pad the track dimension, to make sure all jets fed into the network during training have the same length
     max_tracks = max([len(cur) for cur in jet_tracks])
-    padded = [np.vstack([cur, np.full((set_tracks - len(cur), 8), 0, float)]) for cur in jet_tracks]
+    padded = [np.vstack([cur, np.full((set_tracks - len(cur), 6), 0, float)]) for cur in jet_tracks]
     
     batch_size = len(padded)
     timestep_size = set_tracks
-    jet_dim = 8
+    jet_dim = 6
     x_train = np.array(padded).reshape(batch_size, timestep_size, jet_dim)
     y_train = np.full((batch_size, 1), label, float) # all are b-jets!
     
@@ -73,13 +73,13 @@ def main(argv):
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
-    chunks_limit = 250
+    chunks_limit = 50
 
     # In[24]:
 
-    #model = RNN_classifier()
-    print("loading model back for further training")
-    model = load_model('/users/phwindis/BTagger/RNN_out/lstm64_3layers_singlestep_250/model-final.h5')
+    model = RNN_classifier()
+    #print("loading model back for further training")
+    #model = load_model('/users/phwindis/BTagger/RNN_out/lstm64_3layers_singlestep_250/model-final.h5')
 
     loss_history = []
     loss_val_history = []
@@ -91,7 +91,7 @@ def main(argv):
         number_chunks += 1
     
         #datafile = '/shome/phwindis/0.h5'
-        datafile = '/scratch/snx3000/phwindis/13.h5'
+        datafile = '/scratch/snx3000/phwindis/0.h5'
 
         # read in new chunk of jet and track data
         d1 = pd.read_hdf(datafile, key = 'jets', start = read_pos_jets, stop = read_pos_jets + batch_size_jets)
@@ -129,7 +129,8 @@ def main(argv):
         # iterate over the track list to join jets with the tracks belonging to them
         for irow, row in d2.iterrows():
             # these are the track data of the current track:
-            tracks = row[["Track_pt", "Track_eta", "Track_phi", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
+            tracks = row[["Track_pt", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
+            #tracks = row[["Track_pt", "Track_eta", "Track_phi", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
             jet_index = int(row["Track_jetIndex"])
             if jet_index > last_tracks:
                 break
@@ -175,7 +176,7 @@ def main(argv):
         x_train, y_train = shuffle_synchronized(x_train, y_train)
 
         print("start training")
-        epoch_history = model.fit(x_train, y_train, validation_split = 0.20, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 1)
+        epoch_history = model.fit(x_train, y_train, validation_split = 0.20, batch_size = batch_size_b + batch_size_l + batch_size_c, nb_epoch = 40)
 
         # update loss histories:
         loss_history.append(epoch_history.history['loss'])

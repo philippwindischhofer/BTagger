@@ -1,0 +1,1 @@
+lstm with 3 layers, 64 nodes each, without phi, eta parameters

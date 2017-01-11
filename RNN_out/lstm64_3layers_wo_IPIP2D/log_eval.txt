@@ -1,0 +1,9 @@
+loading model from ./RNN_out/lstm64_3layers_wo_IPIP2D/model-47.h5
+loading validation data
+assembling jets
+sorting jets
+evaluating the model
+evaluating cMVA
+AUC(cMVA) = 0.923336258145
+AUC(RNN) = 0.836787594555
+plotting...

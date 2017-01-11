@@ -1,0 +1,9 @@
+loading model from ./RNN_out/lstm64_3layers_allparams/model-43.h5
+loading validation data
+assembling jets
+sorting jets
+evaluating the model
+evaluating cMVA
+AUC(cMVA) = 0.923336258145
+AUC(RNN) = 0.884380204388
+plotting...

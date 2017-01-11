@@ -24,11 +24,11 @@ def prepare_training_data(jet_list, label):
     # zero-pad the track dimension, to make sure all jets fed into the network during training have the same length
     max_tracks = max([len(cur) for cur in jet_tracks])
     min_tracks = min([len(cur) for cur in jet_tracks])
-    padded = [np.vstack([cur, np.full((max_tracks - len(cur), 8), 0, float)]) for cur in jet_tracks]
+    padded = [np.vstack([cur, np.full((max_tracks - len(cur), 6), 0, float)]) for cur in jet_tracks]
     
     batch_size = len(padded)
     timestep_size = max_tracks
-    jet_dim = 8
+    jet_dim = 6
     x_train = np.array(padded).reshape(batch_size, timestep_size, jet_dim)
     y_train = np.full((batch_size, 1), 1, float) # all are b-jets!
     
@@ -66,8 +66,8 @@ def main(argv):
     # In[4]:
 
     # load a batch of validation data
-    batch_size_jets = 60000
-    batch_size_tracks = 250000
+    batch_size_jets = 120000
+    batch_size_tracks = 520000
     read_pos_jets = 0
     read_pos_tracks = 0
     number_chunks = 0
@@ -110,7 +110,8 @@ def main(argv):
         # iterate over the track list to join jets with the tracks belonging to them
         for irow, row in d2.iterrows():
             # these are the track data of the current track:
-            tracks = row[["Track_pt", "Track_eta", "Track_phi", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
+            tracks = row[["Track_pt", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
+            #tracks = row[["Track_pt", "Track_eta", "Track_phi", "Track_dxy", "Track_dz", "Track_IP", "Track_IP2D", "Track_length"]].as_matrix()
             jet_index = int(row["Track_jetIndex"])
             if jet_index > last_tracks:
                 break

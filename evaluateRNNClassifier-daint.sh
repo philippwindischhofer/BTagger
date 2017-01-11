@@ -18,4 +18,5 @@ export LIBRARY_PATH=$CUDNN_BASE/lib64:$LD_LIBRARY_PATH
 # avoid lock-issues 
 export THEANO_FLAGS="mode=FAST_RUN,device=gpu,lib.cnmem=1,floatX=float32,base_compiledir=$SCRATCH/theano.NOBACKUP"
 
-python ./evaluateRNNClassifier-HDF.py $MODEL_DIR/model-237.h5 $MODEL_DIR/ROC > $MODEL_DIR/log_eval_small_evaluationset.txt
+echo "starting evaluation"
+python ./evaluateRNNClassifier-HDF.py $MODEL_DIR/model-48.h5 $MODEL_DIR/ROC > $MODEL_DIR/log_eval.txt

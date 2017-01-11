@@ -1,0 +1,1 @@
+lstm with 3 layers, 64 nodes each, has all jet parameters as a reproduction run before parameters are left out
