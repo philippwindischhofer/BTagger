@@ -48,9 +48,15 @@ def save_dataset(file, data, **metadata):
 
 def main(argv):
 
-    batch_size_jets = 2400000
-    batch_size_tracks = 10400000
-  
+    #batch_size_jets = 2400000
+    #batch_size_tracks = 10400000
+
+    batch_size_jets = 250000
+    batch_size_tracks = 1100000
+
+    #batch_size_jets = 24000
+    #batch_size_tracks = 104000
+
     print("importing jet list")
     # read in new chunk of jet and track data
     d1 = pd.DataFrame(rnpy.root2array(argv[0], treename = "tagVars/ttree", start = 0, stop = batch_size_jets))
@@ -84,6 +90,7 @@ def main(argv):
         # append the tracks data to the matching jet in the main table
         d1['track_data'][table_index].append(tracks)
         print(str(jet_index) + "/" + str(last_tracks), end = '\r')
+        sys.stdout.flush()
 
     # extract only the fully matched rows for futher processing
     matched = d1.loc[d1['Jet_jetIndex'] < last_tracks - 1]
@@ -105,6 +112,7 @@ def main(argv):
     
 if __name__ == "__main__":
     print("this is the jet-track matching script")
+    sys.stdout.flush()
     main(sys.argv[1:])
 
 
