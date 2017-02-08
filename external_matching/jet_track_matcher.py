@@ -54,6 +54,9 @@ def main(argv):
     batch_size_jets = 250000
     batch_size_tracks = 1100000
 
+    #batch_size_jets = 2500
+    #batch_size_tracks = 11000
+
     #batch_size_jets = 24000
     #batch_size_tracks = 104000
 
@@ -94,6 +97,11 @@ def main(argv):
 
     # extract only the fully matched rows for futher processing
     matched = d1.loc[d1['Jet_jetIndex'] < last_tracks - 1]
+    
+    # retain only the ones with a non-zero number of tracks:
+    track_lengths = np.array(map(len, matched['track_data']))
+    matched = matched.loc[track_lengths > 0]
+    matched = matched.reset_index(drop=True)
 
     # specify number of jet parameters (always eight)
     number_parameters = 8

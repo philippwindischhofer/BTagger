@@ -7,22 +7,23 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from keras.models import Sequential, load_model
 from keras.optimizers import SGD
-from keras.layers import Dense, Activation
+from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
 
 # build here the keras model
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(32, return_sequences = False, input_shape = (None, 8)))
+    model.add(LSTM(64, return_sequences = False, input_shape = (None, 8)))
     #model.add(LSTM(64, return_sequences = True))
     #model.add(LSTM(64))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
+    #model.add(Dropout(0.1))
     model.add(Dense(1, activation='sigmoid'))
 
-    sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
-    model.compile(loss='binary_crossentropy', optimizer = sgd)
+    # sgd = SGD(lr=0.1, decay=1e-6, momentum=0.9, nesterov=True)
+    model.compile(loss='binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
   
     return model
 
@@ -48,7 +49,7 @@ def main(argv):
     loss_history = []
     loss_val_history = []
 
-    number_epochs = 5
+    number_epochs = 50
     number_jet_parameters = 8
     training_dataset_length = 10000
     datafile = '/shome/phwindis/data/matched/1.h5'
@@ -80,7 +81,7 @@ def main(argv):
     #print(y_train)
 
     print("start training")
-    epoch_history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs)
+    epoch_history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1, shuffle = True)
 
     # update loss histories:
     loss_history.append(epoch_history.history['loss'])
