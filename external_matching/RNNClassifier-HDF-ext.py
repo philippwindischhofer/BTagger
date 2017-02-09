@@ -9,6 +9,7 @@ from keras.models import Sequential, load_model
 from keras.optimizers import SGD
 from keras.layers import Dense, Activation, Dropout
 from keras.layers import LSTM
+from h5IO import *
 
 # build here the keras model
 def RNN_classifier():
@@ -27,22 +28,14 @@ def RNN_classifier():
   
     return model
 
-def read_metadata(store):
-    return store.get_storer('data').attrs.metadata
+def create_truth_output(raw_data):
+    y_train = np.array(abs(raw_data['Jet_flavour']) == 5)
 
-def create_track_columns(set_tracks, number_parameters):
-    colnames = []
-    for i in range(set_tracks * number_parameters):
-        colnames.append('T' + str(i))
-    return colnames
+    # converts boolean array into int!
+    y_train = y_train * 1
+    y_train = y_train.reshape((len(y_train), 1))
 
-def create_track_list(table, set_tracks, number_parameters):
-    number_jets = len(table)
-    cols = create_track_columns(set_tracks, number_parameters)
-
-    # extract raw matrix
-    tracks = table.ix[:,cols].as_matrix()
-    return tracks.reshape(number_jets, -1, number_parameters)
+    return y_train
 
 def main(argv):
 
@@ -51,7 +44,7 @@ def main(argv):
 
     number_epochs = 50
     number_jet_parameters = 8
-    training_dataset_length = 10000
+    training_dataset_length = 1000
     datafile = '/shome/phwindis/data/matched/1.h5'
     #datafile = '/scratch/snx3000/phwindis/0.h5'
 
@@ -67,43 +60,37 @@ def main(argv):
     raw_data = pd.read_hdf(datafile, start = 0, stop = training_dataset_length)
 
     # build training input and output:
-    x_train = create_track_list(raw_data, number_tracks, number_jet_parameters)
-    y_train = np.array(abs(raw_data['Jet_flavour']) == 5)
-
-    # converts boolean array into int!
-    y_train = y_train * 1
-    y_train = y_train.reshape((len(y_train), 1))
+    x_train = create_track_list(raw_data, number_tracks, number_jet_parameters, ordered = True)
+    y_train = create_truth_output(raw_data)
 
     print(x_train.shape)
     print(y_train.shape)
 
-    #print(x_train)
-    #print(y_train)
-
     print("start training")
-    epoch_history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1, shuffle = True)
-
-    # update loss histories:
-    loss_history.append(epoch_history.history['loss'])
-    loss_val_history.append(epoch_history.history['val_loss'])
-
-    #MODEL_OUT = argv[0] + '/model-' + str(number_chunks) + '.h5'
-    #print("saving fitted model to " + MODEL_OUT)
-    #model.save(MODEL_OUT)
+    history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1, shuffle = True)
 
     # process the training and validation loss histories
-    #fig = plt.figure(figsize=(10,6))
-    #plt.plot(np.reshape(loss_history, np.size(loss_history)), label = "training loss")
-    #plt.plot(np.reshape(loss_val_history, np.size(loss_val_history)), label = "validation loss")
-    #plt.xlabel("epoch")
-    #plt.ylabel("loss")
-    #plt.legend()
-    #plt.savefig(argv[0] + '/loss-history.pdf')
+    fig = plt.figure(figsize=(10,6))
+    plt.plot(history.history['loss'], label = "training loss")
+    plt.plot(history.history['val_loss'], label = "validation loss")
+    plt.xlabel("epoch")
+    plt.ylabel("loss")
+    plt.legend()
+    plt.savefig(argv[0] + '/loss-history.pdf')
+
+    # process the training and validation loss histories
+    fig = plt.figure(figsize=(10,6))
+    plt.plot(history.history['acc'], label = "training accuracy")
+    plt.plot(history.history['val_acc'], label = "validation accuracy")
+    plt.xlabel("epoch")
+    plt.ylabel("accuracy")
+    plt.legend()
+    plt.savefig(argv[0] + '/accuracy-history.pdf')
 
     # save the model after training here
-    #MODEL_OUT = argv[0] + '/model-final.h5'
-    #print("saving fitted model to " + MODEL_OUT)
-    #model.save(MODEL_OUT)
+    MODEL_OUT = argv[0] + '/model-final.h5'
+    print("saving fitted model to " + MODEL_OUT)
+    model.save(MODEL_OUT)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

@@ -9,7 +9,7 @@ export NUMEXPR_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 
 # for local testing
-#JOB_ID=local_test_hdf
+JOB_ID=external_matching_test
 
 # for saving the output
 OUTDIR=$HOME/DeepTagger/RNN_out/${JOB_ID}
@@ -17,5 +17,4 @@ echo $OUTDIR
 mkdir -p $OUTDIR
 
 # write all output files back here
-#python -m cProfile /shome/phwindis/DeepTagger/RNNClassifier-HDF.py `echo "$OUTDIR"`
 python /shome/phwindis/DeepTagger/external_matching/RNNClassifier-HDF-ext.py `echo "$OUTDIR"`
