@@ -10,18 +10,21 @@ def create_track_columns(set_tracks, number_parameters):
         colnames.append('T' + str(i))
     return colnames
 
-def create_track_list(table, set_tracks, number_parameters, ordered = False):
+def create_track_list(table, set_tracks, parameters_requested, tracks_requested, ordered = False):
+    # number of jet parameters: always eight
+    number_parameters = 8
     number_jets = len(table)
+
+    # extract ALL the jet track columns present in the datafile
     cols = create_track_columns(set_tracks, number_parameters)
 
     # extract raw matrix
     tracks = table.ix[:,cols].as_matrix()
     tracks = tracks.reshape(number_jets, -1, number_parameters)
 
-    # TODO: return only first n tracks / parameters here
-
     # pt-order the tracks here, if demanded
     if ordered:
-        return np.array([sorted(cur, key = lambda tracks: tracks[0], reverse = True) for cur in tracks])
+        tracks = np.array([sorted(cur, key = lambda tracks: tracks[0], reverse = True) for cur in tracks])
 
-    return tracks
+    # return only first n tracks / parameters here
+    return tracks[:, 0:tracks_requested, 0:parameters_requested]

@@ -51,17 +51,20 @@ def main(argv):
     model = load_model(argv[0])
 
     # loading the validation dataset
-    datafile = '/shome/phwindis/data/matched/1.h5'
+    datafile = '/shome/phwindis/data/matched/2.h5'
 
     with pd.HDFStore(datafile) as store:
         metadata = read_metadata(store)
     number_tracks = metadata['number_tracks']
 
+    jet_parameters_requested = 8
+    tracks_requested = number_tracks
+
     print("reading evaluation data")
     raw_data = pd.read_hdf(datafile, start = 0, stop = evaluation_dataset_length)
 
     # build validation input and output
-    x_validation = create_track_list(raw_data, number_tracks, number_jet_parameters, ordered = True)
+    x_validation = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
     y_validation = create_truth_output(raw_data).flatten()
 
     # obtain the model's response for the evaluation data
@@ -85,6 +88,21 @@ def main(argv):
     plt.ylabel('misidentification prob.')
     plt.legend(loc = "upper left")
     fig.savefig(argv[1] + '-plot.pdf')
+
+    # plot the RNN output vs. the CMVA output
+    fig = plt.figure(figsize=(10,6))
+    plt.hexbin(response_rnn[y_validation == 1], response_cmva[y_validation == 1], gridsize = 30, mincnt = 1, cmap = 'inferno')
+    plt.title('b jets')
+    plt.xlabel('RNN output')
+    plt.ylabel('cMVA output')
+    fig.savefig(argv[1] + '-corrplot_b.pdf')
+
+    fig = plt.figure(figsize=(10,6))
+    plt.hexbin(response_rnn[y_validation == 0], response_cmva[y_validation == 0], gridsize = 30, mincnt = 1, cmap = 'inferno')
+    plt.title('non-b jets')
+    plt.xlabel('RNN output')
+    plt.ylabel('cMVA output')
+    fig.savefig(argv[1] + '-corrplot_non_b.pdf')
 
 if __name__ == "__main__":
     main(sys.argv[1:])

@@ -43,7 +43,6 @@ def main(argv):
     loss_val_history = []
 
     number_epochs = 50
-    number_jet_parameters = 8
     training_dataset_length = 1000
     datafile = '/shome/phwindis/data/matched/1.h5'
     #datafile = '/scratch/snx3000/phwindis/0.h5'
@@ -56,11 +55,16 @@ def main(argv):
         metadata = read_metadata(store)
     number_tracks = metadata['number_tracks']
 
+    jet_parameters_requested = 8 # number of parameters used for the classification
+    tracks_requested = number_tracks # max. number of tracks used for each jet
+
+    print("max number of tracks is " + str(number_tracks))
+
     print("reading training data")
     raw_data = pd.read_hdf(datafile, start = 0, stop = training_dataset_length)
 
     # build training input and output:
-    x_train = create_track_list(raw_data, number_tracks, number_jet_parameters, ordered = True)
+    x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
     y_train = create_truth_output(raw_data)
 
     print(x_train.shape)
