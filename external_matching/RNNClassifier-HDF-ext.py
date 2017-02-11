@@ -15,9 +15,9 @@ from h5IO import *
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(64, return_sequences = False, input_shape = (None, 8)))
-    #model.add(LSTM(64, return_sequences = True))
-    #model.add(LSTM(64))
+    model.add(LSTM(32, return_sequences = False, input_shape = (None, 8)))
+    #model.add(LSTM(128, return_sequences = True))
+    #model.add(LSTM(128))
     
     # make an output layer with just 1 output -> for a binary classification problem: b-jet / not b-jet
     #model.add(Dropout(0.1))
@@ -42,9 +42,9 @@ def main(argv):
     loss_history = []
     loss_val_history = []
 
-    number_epochs = 50
+    number_epochs = 20
 
-    training_dataset_length = 100000
+    training_dataset_length = 1000
     datafile = '/shome/phwindis/data/matched/1.h5'
     #datafile = '/scratch/snx3000/phwindis/0.h5'
 

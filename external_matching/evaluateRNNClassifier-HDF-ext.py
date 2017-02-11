@@ -51,7 +51,7 @@ def main(argv):
     model = load_model(argv[0])
 
     # loading the validation dataset
-    datafile = '/shome/phwindis/data/matched/2.h5'
+    datafile = '/shome/phwindis/data/matched/3.h5'
 
     with pd.HDFStore(datafile) as store:
         metadata = read_metadata(store)
@@ -77,6 +77,11 @@ def main(argv):
     misid_rnn, efficiency_rnn, _ = metrics.roc_curve(y_validation, response_rnn, pos_label = 1)
     misid_cmva, efficiency_cmva, _ = metrics.roc_curve(y_validation, response_cmva, pos_label = 1)
 
+    rocdata_rnn = np.vstack([misid_rnn, efficiency_rnn])
+    rocdata_cmva = np.vstack([misid_cmva, efficiency_cmva])
+    np.save(argv[1] + '-rocdata_rnn', rocdata_rnn)
+    np.save(argv[1] + '-rocdata_cmva', rocdata_cmva)
+
     print("plotting...")
     fig = plt.figure(figsize=(10,6))
     plt.plot(efficiency_rnn, misid_rnn, label = "LSTM")
@@ -89,19 +94,29 @@ def main(argv):
     plt.legend(loc = "upper left")
     fig.savefig(argv[1] + '-plot.pdf')
 
+    print(len(response_rnn[y_validation == 1]))
+    print(len(response_cmva[y_validation == 1]))
+
+    print(len(response_rnn[y_validation == 0]))
+    print(len(response_cmva[y_validation == 0]))
+
     # plot the RNN output vs. the CMVA output
     fig = plt.figure(figsize=(10,6))
-    plt.hexbin(response_rnn[y_validation == 1], response_cmva[y_validation == 1], gridsize = 30, mincnt = 1, cmap = 'inferno')
+    plt.hexbin(response_rnn[y_validation == 1], response_cmva[y_validation == 1], gridsize = 30, mincnt = 1, bins = 'log')
     plt.title('b jets')
     plt.xlabel('RNN output')
     plt.ylabel('cMVA output')
+    cb = plt.colorbar()
+    cb.set_label('log10(N)')
     fig.savefig(argv[1] + '-corrplot_b.pdf')
 
     fig = plt.figure(figsize=(10,6))
-    plt.hexbin(response_rnn[y_validation == 0], response_cmva[y_validation == 0], gridsize = 30, mincnt = 1, cmap = 'inferno')
+    plt.hexbin(response_rnn[y_validation == 0], response_cmva[y_validation == 0], gridsize = 30, mincnt = 1, bins = 'log')
     plt.title('non-b jets')
     plt.xlabel('RNN output')
     plt.ylabel('cMVA output')
+    cb = plt.colorbar()
+    cb.set_label('log10(N)')
     fig.savefig(argv[1] + '-corrplot_non_b.pdf')
 
 if __name__ == "__main__":

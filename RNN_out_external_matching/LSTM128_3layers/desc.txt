@@ -1,0 +1,1 @@
+training with /data/matched/1.h5, training batch size = 100000, 10 epochs, LSTM with 128 nodes, 3 layers
