@@ -6,7 +6,8 @@ echo "Go to scratch"
 echo "Prepare modules"
 module load daint-gpu
 module load craype-accel-nvidia60
-module load pycuda/2016.1.2-CrayGNU-2016.11-Python-3.5.2-cuda-8.0
+module load pycuda
+module load pycuda/2016.1.2-CrayGNU-2016.11-Python-3.5.2-cuda-8.0.54
 
 # Enable CUDNN
 export CUDNN_BASE=/users/phwindis/cuda
@@ -18,8 +19,8 @@ export LIBRARY_PATH=$CUDNN_BASE/lib64:$LD_LIBRARY_PATH
 export THEANO_FLAGS="mode=FAST_RUN,device=gpu,lib.cnmem=1,floatX=float32,base_compiledir=$SCRATCH/theano.NOBACKUP"
 
 echo "Go back home"
-JOB_ID=lstm64_3layers_wo_phieta
-JOB_DESC="lstm with 3 layers, 64 nodes each, without phi, eta parameters"
+JOB_ID=matched_training_test_daint
+JOB_DESC="training with matched data on daint. tests."
 OUTDIR=$HOME/BTagger/RNN_out/${JOB_ID}
 mkdir -p $OUTDIR
 echo $OUTDIR
@@ -29,4 +30,4 @@ echo $JOB_DESC > $OUTDIR/desc.txt
 echo "Starting TrainClassifiers.py"
 
 #python -m cProfile /users/phwindis/BTagger/RNNClassifier-HDF.py `echo "$OUTDIR"` &> log.txt
-python /users/phwindis/BTagger/external_matching/RNNClassifier-HDF-ext.py `echo "$OUTDIR"` > $OUTDIR/log.txt
+python /users/phwindis/BTagger/external_matching/RNNClassifier-HDF-ext.py `echo "$OUTDIR"` &> $OUTDIR/log.txt

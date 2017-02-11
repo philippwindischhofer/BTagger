@@ -43,9 +43,9 @@ def main(argv):
     loss_val_history = []
 
     number_epochs = 50
-    training_dataset_length = 1000
-    datafile = '/shome/phwindis/data/matched/1.h5'
-    #datafile = '/scratch/snx3000/phwindis/0.h5'
+    training_dataset_length = 10000
+    #datafile = '/shome/phwindis/data/matched/1.h5'
+    datafile = '/scratch/snx3000/phwindis/matched/1.h5'
 
     # create model
     model = RNN_classifier()
