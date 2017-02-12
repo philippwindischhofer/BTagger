@@ -26,5 +26,7 @@ def create_track_list(table, set_tracks, parameters_requested, tracks_requested,
     if ordered:
         tracks = np.array([sorted(cur, key = lambda tracks: tracks[0], reverse = True) for cur in tracks])
 
-    # return only first n tracks / parameters here
-    return tracks[:, 0:tracks_requested, 0:parameters_requested]
+    # return only the wanted tracks, parameters
+    retval = tracks[:, tracks_requested, :]
+    retval = retval[:, :, parameters_requested]
+    return retval
