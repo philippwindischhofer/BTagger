@@ -63,13 +63,16 @@ def main(argv):
     print("reading evaluation data")
     raw_data = pd.read_hdf(datafile, start = 0, stop = evaluation_dataset_length)
 
+    print("building evaluation jetlist")
     # build validation input and output
     x_validation = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
     y_validation = create_truth_output(raw_data).flatten()
 
+    print("obtaining the model's predictions")
     # obtain the model's response for the evaluation data
     response_rnn = model.predict(x_validation, batch_size = len(x_validation)).flatten()
 
+    print("producing the curves")
     # get the CMVA response for the same data
     response_cmva = np.array(raw_data['Jet_cMVA']).flatten()
 

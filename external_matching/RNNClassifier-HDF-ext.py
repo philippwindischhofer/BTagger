@@ -15,7 +15,7 @@ from h5IO import *
 def RNN_classifier():
     model = Sequential()
     
-    model.add(LSTM(32, return_sequences = False, input_shape = (None, 8)))
+    model.add(LSTM(64, return_sequences = False, input_shape = (None, 8)))
     #model.add(LSTM(128, return_sequences = True))
     #model.add(LSTM(128))
     
@@ -42,9 +42,9 @@ def main(argv):
     loss_history = []
     loss_val_history = []
 
-    number_epochs = 20
+    number_epochs = 10
 
-    training_dataset_length = 1000
+    training_dataset_length = 100000
     datafile = '/shome/phwindis/data/matched/1.h5'
     #datafile = '/scratch/snx3000/phwindis/0.h5'
 
@@ -65,7 +65,7 @@ def main(argv):
     raw_data = pd.read_hdf(datafile, start = 0, stop = training_dataset_length)
 
     # build training input and output:
-    x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
+    x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = False)
     y_train = create_truth_output(raw_data)
 
     print(x_train.shape)

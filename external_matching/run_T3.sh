@@ -10,8 +10,8 @@ export MKL_NUM_THREADS=1
 export THEANO_FLAGS="base_compiledir=$HOME/theano.NOBACKUP"
 
 # for local testing
-JOB_ID=LSTM32_1layer
-JOB_DESC="training with /data/matched/1.h5, training batch size = 1000, 20 epochs, LSTM with 32 nodes, 1 layer"
+JOB_ID=LSTM64_1layer_not_ordered
+JOB_DESC="training with /data/matched/1.h5, training batch size = 100000, 10 epochs, LSTM with 64 nodes, 1 layer, tracks not pt-ordered, but taken as they come from the MC"
 
 # for saving the output
 OUTDIR=$HOME/DeepTagger/RNN_out_external_matching/${JOB_ID}
