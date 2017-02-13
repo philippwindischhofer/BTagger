@@ -63,51 +63,60 @@
 
 \begin{frame}
   \frametitle{Results so far (work in progress)}
-  \begin{itemize}
-  \item trained a number of LSTM networks, scanned the hyperparameters:
+  trained a number of LSTM networks, scanned the hyperparameters:
     \begin{itemize}
     \item number of nodes in each layer
     \item number of layers
     \item number of training epochs
     \end{itemize}
-  \end{itemize}
   
   Details of the training:
   \begin{itemize}
   \item training dataset contains 100-150k jets
   \item training/validation split 80:20
-  \item batch size: 1k jets
+  \item batch size: 1k jets (also tried unbatched training)
   \end{itemize}
-\end{frame}
 
-\begin{frame}
-  \frametitle{Progress w.r.t last time:}
+  Progress w.r.t. last time:
   \begin{itemize}
     \item made code (much) more flexible
-    \item ready to efficiently ramp up training & try different network types
-  \end{itemize}
+    \item ready to efficiently ramp up training \& try different network types
+  \end{itemize}  
 \end{frame}
 
 \begin{frame}
   \frametitle{different network shapes (unbatched)}
-
+  \begin{itemize}
+  \item batch size = 1
+    \item labelling: \textsl{number nodes / number layers}
+  \end{itemize}
+  
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}}	
+    \subfloat[][]{\includegraphics[width =0.9\textwidth]{./1layers.pdf}}	
   \end{figure}
 
 \end{frame}
 
 \begin{frame}
-  \frametitle{discovering the amenities of batched training}
-
+  \frametitle{using less information}
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.5\textwidth]{../RNN_out/lstm64_1layer_singlestep_250/loss-history.pdf}}	
+    \subfloat[][]{\includegraphics[width =0.9\textwidth]{./removed_parameters.pdf}}	
   \end{figure}
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{batched training}
+  batch size = 1k jets
+
+    \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =1.0\textwidth]{./1layers.pdf}}	
+  \end{figure}
+
+\end{frame}
 
 \begin{frame}
   \frametitle{Conclusions}
