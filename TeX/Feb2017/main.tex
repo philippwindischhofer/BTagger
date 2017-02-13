@@ -30,20 +30,6 @@
 %\end{frame}
 
 \begin{frame}
-  \frametitle{The Setup}
-
-  \begin{block}{Goal}
-    Train a binary neural-network based classifier that can distinguish between $b$- and non-$b$-jets, using the raw jet data as input.
-  \end{block}
-
-  \begin{itemize}
-  \item use \textsl{tracks} as the primary source of information
-  \item number of tracks is unknown a-priori $\rightarrow$ cannot use an architecture that expects a fixed number of inputs
-  \item currently looking into recurrent neural networks / LSTM networks
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
   \frametitle{The Workflow}
   \framesubtitle{Training}
   \begin{itemize}
@@ -93,9 +79,10 @@
   
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.9\textwidth]{./1layers.pdf}}	
-  \end{figure}
+    \subfloat[][]{\includegraphics[width =0.7\textwidth]{./1layers.pdf}}	
+    \end{figure}
 
+    3-layer networks very similar...
 \end{frame}
 
 \begin{frame}
@@ -113,8 +100,39 @@
 
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =1.0\textwidth]{./1layers.pdf}}	
+    \subfloat[][]{\includegraphics[width =0.8\textwidth]{./batchedunbatched.pdf}}	
+    \end{figure}
+    What is a reasonable batch size to use?
+\end{frame}
+
+\begin{frame}
+  \frametitle{different network shapes (batched)}
+  \begin{itemize}
+  \item batch size = 1
+    \item labelling: \textsl{number nodes / number layers}
+  \end{itemize}
+  
+    \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.9\textwidth]{./1layers.pdf}}	% add the correct file here!
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{LSTM64/1: batched training}
+  batch size = 1k jets $\rightarrow$ much smoother descent
+  \begin{figure}[htb]
+    \centering
+    \subfloat[][]{\includegraphics[width =0.8\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-history.pdf}}	
+  \end{figure}
+
+  TODO: add callback for terminating the training once saturated!
+\end{frame}
+
+\begin{frame}
+  \frametitle{LSTM64/1: batched training}
+\only<1>{\centering\includegraphics[width =0.9\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_b.pdf}}
+\only<2>{\centering\includegraphics[width =0.9\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_non_b.pdf}}
 
 \end{frame}
 
