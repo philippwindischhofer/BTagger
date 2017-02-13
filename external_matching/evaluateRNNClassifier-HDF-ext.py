@@ -34,6 +34,7 @@ def main(argv):
 
     # load back the parameters
     args = read_arguments(params_path)
+    print(args)
 
     # loading the validation dataset
     datafile = '/shome/phwindis/data/matched/3.h5'
@@ -43,7 +44,11 @@ def main(argv):
     number_tracks = metadata['number_tracks']
 
     jet_parameters_requested = args['track_parameters'] # request all jet parameters
-    tracks_requested = np.arange(args['number_tracks']) # request all tracks for each jet
+
+    if args['number_tracks'] < 0:
+        tracks_requested = np.arange(number_tracks) # request all tracks for each jet
+    else:
+        tracks_requested = np.arange(args['number_tracks']) # request the specified ones
 
     print("reading evaluation data")
     raw_data = pd.read_hdf(datafile, start = 0, stop = evaluation_dataset_length)
@@ -70,6 +75,12 @@ def main(argv):
     rocdata_cmva = np.vstack([misid_cmva, efficiency_cmva])
     np.save(argv[0] + '/rocdata_rnn', rocdata_rnn)
     np.save(argv[0] + '/rocdata_cmva', rocdata_cmva)
+
+    # compute AUC
+    rnn_auc = metrics.roc_auc_score(y_validation, response_rnn)
+    cmva_auc = metrics.roc_auc_score(y_validation, response_cmva)
+    print("AUC(RNN) = " + str(rnn_auc))
+    print("AUC(cMVA) = " + str(cmva_auc))
 
     print("plotting...")
     fig = plt.figure(figsize=(10,6))

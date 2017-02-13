@@ -10,8 +10,8 @@ export MKL_NUM_THREADS=1
 export THEANO_FLAGS="base_compiledir=$HOME/theano.NOBACKUP"
 
 # for local testing
-JOB_ID=LSTM64_1layer_large_training_batch
-JOB_DESC="trains a 64/1 LSTM with all track parameters, 150000 as training set length, 50 epochs, batch size = 1000"
+JOB_ID=LSTM128_1layer_large_training_batch
+JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 50 epochs, batch size = 1000"
 
 # for saving the output
 OUTDIR=$HOME/DeepTagger/RNN_out_external_matching/${JOB_ID}
@@ -22,7 +22,7 @@ echo $JOB_DESC > $OUTDIR/desc.txt
 
 # to specify the model topology and the jet / track parameters accessible to the network
 # number of nodes per layer
-NODES=64
+NODES=128
 LAYERS=1
 EPOCHS=50
 TRAINING_LENGTH=150000
