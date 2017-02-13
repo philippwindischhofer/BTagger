@@ -87,7 +87,7 @@ def main(argv):
     print(y_train.shape)
 
     print("start training")
-    history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1, shuffle = True)
+    history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1000, shuffle = True)
 
     # process the training and validation loss histories
     fig = plt.figure(figsize=(10,6))
