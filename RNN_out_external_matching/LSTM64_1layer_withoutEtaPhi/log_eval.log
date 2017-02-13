@@ -1,0 +1,6 @@
+loading model from ../RNN_out_external_matching/LSTM64_1layer_withoutEtaPhi/model-final.h5
+{'track_parameters': array([0, 3, 4, 5, 6, 7]), 'number_nodes': 64, 'number_epochs': 20, 'training_length': 100000, 'number_tracks': -1, 'number_layers': 1, 'outdir': '/shome/phwindis/DeepTagger/RNN_out_external_matching/LSTM64_1layer_withoutEtaPhi'}
+reading evaluation data
+building evaluation jetlist
+(200000, 0, 6)
+obtaining the model's predictions
