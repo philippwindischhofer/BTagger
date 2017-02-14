@@ -337,8 +337,9 @@ INPUT ./removed_parameters.pdf
 INPUT ./batchedunbatched.pdf
 INPUT ./batchedunbatched.pdf
 INPUT ./batchedunbatched.pdf
-INPUT ./1layers.pdf
-INPUT ./1layers.pdf
+INPUT ./batchedcomparison.pdf
+INPUT ./batchedcomparison.pdf
+INPUT ./batchedcomparison.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm

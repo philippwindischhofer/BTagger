@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  13 FEB 2017 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.5)  14 FEB 2017 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,59 +1308,61 @@ Package pdftex.def Info: ./removed_parameters.pdf used on input line 95.
 File: ./batchedunbatched.pdf Graphic file (type pdf)
 
 <use ./batchedunbatched.pdf>
-Package pdftex.def Info: ./batchedunbatched.pdf used on input line 106.
-(pdftex.def)             Requested size: 273.83728pt x 164.30092pt.
+Package pdftex.def Info: ./batchedunbatched.pdf used on input line 109.
+(pdftex.def)             Requested size: 239.60567pt x 143.7633pt.
  [6
 
  <./batchedunbatched.pdf>]
-File: ./1layers.pdf Graphic file (type pdf)
- <use ./1layers.pdf>
-Package pdftex.def Info: ./1layers.pdf used on input line 119.
-(pdftex.def)             Requested size: 308.06367pt x 184.83853pt.
+<./batchedcomparison.pdf, id=186, 722.7pt x 433.62pt>
+File: ./batchedcomparison.pdf Graphic file (type pdf)
 
-Overfull \vbox (20.16954pt too high) detected at line 119
+<use ./batchedcomparison.pdf>
+Package pdftex.def Info: ./batchedcomparison.pdf used on input line 124.
+(pdftex.def)             Requested size: 239.60567pt x 143.7633pt.
+
+Overfull \vbox (4.03596pt too high) detected at line 124
  []
 
 [7
 
-]
+ <./batchedcomparison.pdf>]
 <../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-histor
-y.pdf, id=193, 722.7pt x 433.62pt>
+y.pdf, id=234, 722.7pt x 433.62pt>
 File: ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-h
 istory.pdf Graphic file (type pdf)
 
 <use ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-hi
 story.pdf>
 Package pdftex.def Info: ../../RNN_out_external_matching/LSTM64_1layer_large_tr
-aining_batch/loss-history.pdf used on input line 130.
+aining_batch/loss-history.pdf used on input line 135.
 (pdftex.def)             Requested size: 273.83728pt x 164.30092pt.
  [8
 
  <../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-histo
 ry.pdf>]
 <../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_b.
-pdf, id=230, 722.7pt x 433.62pt>
+pdf, id=271, 722.7pt x 433.62pt>
 File: ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrpl
 ot_b.pdf Graphic file (type pdf)
 
 <use ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplo
 t_b.pdf>
 Package pdftex.def Info: ../../RNN_out_external_matching/LSTM64_1layer_large_tr
-aining_batch/corrplot_b.pdf used on input line 137.
+aining_batch/corrplot_b.pdf used on input line 142.
 (pdftex.def)             Requested size: 308.06367pt x 184.83853pt.
  [9
 
  <../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_b
 .pdf>]
 <../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_no
-n_b.pdf, id=275, 722.7pt x 433.62pt>
+n_b.pdf, id=316, 722.7pt x 433.62pt>
 File: ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrpl
 ot_non_b.pdf Graphic file (type pdf)
 
 <use ../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplo
 t_non_b.pdf>
 Package pdftex.def Info: ../../RNN_out_external_matching/LSTM64_1layer_large_tr
-aining_batch/corrplot_non_b.pdf used on input line 137.
+aining_batch/corrplot_non_b.pdf used on input line 142.
 (pdftex.def)             Requested size: 308.06367pt x 184.83853pt.
  [10
 
@@ -1377,11 +1379,11 @@ on_b.pdf>] [11
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1389,13 +1391,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 18832 strings out of 493049
- 354845 string characters out of 6140511
+ 18837 strings out of 493049
+ 354977 string characters out of 6140511
  429110 words of memory out of 5000000
- 21889 multiletter control sequences out of 15000+600000
+ 21893 multiletter control sequences out of 15000+600000
  14902 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,384b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1406,10 +1408,10 @@ ts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public
 ssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></us
 r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (11 pages, 452462 bytes).
+Output written on main.pdf (11 pages, 569802 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 403 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1487005261 "main.tex" "main.pdf" "main" 1487005262
+["pdflatex"] 1487061609 "main.tex" "main.pdf" "main" 1487061609
   "../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_b.pdf" 1487002087 18857 1d40270de0954bd96fb53784220f568b ""
   "../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_non_b.pdf" 1487002087 19256 e543fecd572c11ca541e6a42b74d5371 ""
   "../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/loss-history.pdf" 1487002087 11144 70755614b6ec5f19da040417bcec4dd2 ""
@@ -197,17 +197,18 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1479649825 31669 df537245012f3e5f05bdc55644b7a3df ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1482505342 1848177 b567b59fd9d62063141ec49d863a0fc4 ""
   "1layers.pdf" 1487002087 124018 5c28c1590b19aed0becb2022b5a8b383 ""
+  "batchedcomparison.pdf" 1487060312 118925 aab0bcebabecb457f2043acb3af47cf1 ""
   "batchedunbatched.pdf" 1487004105 87841 89359769d06a99d5f43b8d79afaf309a ""
-  "main.aux" 1487005262 2338 eb9023c39caaa31ef8414470882eaf12 ""
-  "main.nav" 1487005262 1150 ec849d2537d6a00e3f8e88beae9f6587 ""
-  "main.out" 1487005261 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "main.tex" 1487005260 3951 e9f5702a9bb454a0504b748c2af9ed03 ""
+  "main.aux" 1487061609 2338 eb9023c39caaa31ef8414470882eaf12 ""
+  "main.nav" 1487061609 1150 ec849d2537d6a00e3f8e88beae9f6587 ""
+  "main.out" 1487061609 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.tex" 1487061607 4569 d22bd64ae51b71edab709a54708cea31 ""
   "removed_parameters.pdf" 1487002087 123492 0884bc32db99349a3223597369a132af ""
   (generated)
-  "main.nav"
   "main.toc"
-  "main.snm"
   "main.log"
-  "main.out"
-  "main.pdf"
   "main.aux"
+  "main.snm"
+  "main.out"
+  "main.nav"
+  "main.pdf"

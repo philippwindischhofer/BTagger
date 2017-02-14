@@ -96,11 +96,14 @@
 
 \begin{frame}
   \frametitle{batched training}
-  batch size = 1k jets
+  \begin{itemize}
+    \item batch size = 1k jets
+    \item labelling: \textsl{number nodes / number layers}
+      \end{itemize}
 
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.8\textwidth]{./batchedunbatched.pdf}}	
+    \subfloat[][]{\includegraphics[width =0.7\textwidth]{./batchedunbatched.pdf}}	
     \end{figure}
     What is a reasonable batch size to use?
 \end{frame}
@@ -108,14 +111,16 @@
 \begin{frame}
   \frametitle{different network shapes (batched)}
   \begin{itemize}
-  \item batch size = 1
+  \item batch size = 1k jets
     \item labelling: \textsl{number nodes / number layers}
   \end{itemize}
   
     \begin{figure}[htb]
     \centering
-    \subfloat[][]{\includegraphics[width =0.9\textwidth]{./1layers.pdf}}	% add the correct file here!
-  \end{figure}
+    \subfloat[][]{\includegraphics[width =0.7\textwidth]{./batchedcomparison.pdf}}	% add the correct file here!
+    \end{figure}
+    Again very similar AUC:\\
+    128/1 vs 64/3 vs 64/1 vs cMVA = 0.8945 vs 0.8920 vs 0.8924 vs 0.9240
 \end{frame}
 
 \begin{frame}
@@ -132,12 +137,23 @@
 \begin{frame}
   \frametitle{LSTM64/1: batched training}
 \only<1>{\centering\includegraphics[width =0.9\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_b.pdf}}
-\only<2>{\centering\includegraphics[width =0.9\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_non_b.pdf}}
-
+\only<2>{\centering\includegraphics[width =0.9\textwidth]{../../RNN_out_external_matching/LSTM64_1layer_large_training_batch/corrplot_non_b.pdf}}\\
+(very similar for the others)
 \end{frame}
 
 \begin{frame}
-  \frametitle{Conclusions}
+  \frametitle{Next steps}
+
+  New results very similar to what we had before!
+
+  What to do next?
+  \begin{itemize}
+  \item try more epochs (until overtraining becomes visible?)
+  \item try more training data (i.e.~multiple 150k sets?)
+  \item try conventional RNN instead of LSTM
+  \item try different optimizers (up to now used Adam with standard parameters)
+  \item ...
+  \end{itemize}
 
 \end{frame}
 
