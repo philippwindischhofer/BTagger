@@ -6,8 +6,6 @@ JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set 
 
 # for saving the output
 OUTDIR=$HOME/DeepTagger/RNN_out_external_matching/${JOB_ID}
-echo "project home dir"
-echo $PROJECT_HOME
 echo $OUTDIR
 mkdir -p $OUTDIR
 echo $JOB_DESC
@@ -30,4 +28,4 @@ PARAMETERS="0 1 2 3 4 5 6 7"
 echo "starting"
 
 # write all output files back here
-python $PROJECT_HOME/external_matching/RNNClassifier-HDF-ext.py `echo "$OUTDIR $EPOCHS $TRAINING_LENGTH $NODES $LAYERS $TRACKS $PARAMETERS"` > $OUTDIR/log.txt
+python ./RNNClassifier-HDF-ext.py `echo "$OUTDIR $EPOCHS $TRAINING_LENGTH $NODES $LAYERS $TRACKS $PARAMETERS"` > $OUTDIR/log.txt
