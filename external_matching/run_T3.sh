@@ -9,4 +9,4 @@ export NUMEXPR_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 export THEANO_FLAGS="base_compiledir=$HOME/theano.NOBACKUP"
 
-./run.sh
+/shome/phwindis/DeepTagger/external_matching/run.sh
