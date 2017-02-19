@@ -28,4 +28,4 @@ PARAMETERS="0 1 2 3 4 5 6 7"
 echo "starting"
 
 # write all output files back here
-python ./RNNClassifier-HDF-ext.py `echo "$OUTDIR $EPOCHS $TRAINING_LENGTH $NODES $LAYERS $TRACKS $PARAMETERS"` > $OUTDIR/log.txt
+python $PROJECT_HOME/external_matching/RNNClassifier-HDF-ext.py `echo "$OUTDIR $EPOCHS $TRAINING_LENGTH $NODES $LAYERS $TRACKS $PARAMETERS"` > $OUTDIR/log.txt
