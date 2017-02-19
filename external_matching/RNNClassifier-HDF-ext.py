@@ -56,8 +56,8 @@ def main(argv):
     number_epochs = args['number_epochs']
     training_dataset_length = args['training_length']
 
-    datafile = '/shome/phwindis/data/matched/1.h5'
-    #datafile = '/scratch/snx3000/phwindis/matched/1.h5'
+    #datafile = '/shome/phwindis/data/matched/1.h5'
+    datafile = '/scratch/snx3000/phwindis/matched/1.h5'
 
     # read in training data
     with pd.HDFStore(datafile) as store:
