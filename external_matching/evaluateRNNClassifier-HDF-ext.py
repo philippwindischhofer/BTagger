@@ -37,7 +37,8 @@ def main(argv):
     print(args)
 
     # loading the validation dataset
-    datafile = '/shome/phwindis/data/matched/3.h5'
+    #datafile = '/shome/phwindis/data/matched/3.h5'
+    datafile = '/scratch/snx3000/phwindis/matched/3.h5'
 
     with pd.HDFStore(datafile) as store:
         metadata = read_metadata(store)

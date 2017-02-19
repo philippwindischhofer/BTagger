@@ -29,9 +29,8 @@ def RNN_classifier(nodes, layers, input_dimension):
     #model.add(Dropout(0.1))
     model.add(Dense(1, activation='sigmoid'))
 
-    sgd = SGD(lr = 0.001, decay = 1e-6, momentum = 0.9, nesterov = True)
-    model.compile(loss='binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
-    #model.compile(loss='binary_crossentropy', optimizer = sgd, metrics = ['accuracy'])
+    sgd = SGD(lr = 0.003, decay = 1e-6, momentum = 0.9, nesterov = True)
+    model.compile(loss='binary_crossentropy', optimizer = sgd, metrics = ['accuracy'])
   
     return model
 
