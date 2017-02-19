@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # for local testing
-JOB_ID=daint_testing
+JOB_ID=T3_testing
 JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 50 epochs, batch size = 1000"
 
 # for saving the output
