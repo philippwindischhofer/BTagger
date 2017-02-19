@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # for local testing
-JOB_ID=daint_testing
-JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 50 epochs, batch size = 1000"
+JOB_ID=LSTM128-1-Adam
+JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 1000 epochs, batch size = 1000, Adam"
+#JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 1000 epochs, batch size = 1000, SGD, LR = 0.001, decay = 1e-6, momentum = 0.9"
 
 # for saving the output
 OUTDIR=$PROJECT_HOME/RNN_out_external_matching/${JOB_ID}
@@ -15,7 +16,7 @@ echo $JOB_DESC > $OUTDIR/desc.txt
 # number of nodes per layer
 NODES=128
 LAYERS=1
-EPOCHS=50
+EPOCHS=1000
 TRAINING_LENGTH=150000
 
 # number of tracks (-1 ... use all that are available)
