@@ -1,0 +1,14 @@
+loading model from ../RNN_out_external_matching/LSTM128-1-1/model-final.h5
+{'track_parameters': array([0, 1, 2, 3, 4, 5, 6, 7]), 'number_nodes': 128, 'number_layers': 1, 'outdir': '/users/phwindis/BTagger/RNN_out_external_matching/LSTM128-1-1', 'training_length': 150000, 'number_epochs': 1000, 'number_tracks': -1}
+reading evaluation data
+building evaluation jetlist
+(200000, 36, 8)
+obtaining the model's predictions
+producing the curves
+AUC(RNN) = 0.883231686919
+AUC(cMVA) = 0.92396254387
+plotting...
+67826
+67826
+132174
+132174

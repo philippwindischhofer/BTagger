@@ -29,9 +29,8 @@ def RNN_classifier(nodes, layers, input_dimension):
     #model.add(Dropout(0.1))
     model.add(Dense(1, activation='sigmoid'))
 
-    sgd = SGD(lr = 0.001, decay = 1e-6, momentum = 0.9, nesterov = True)
-    model.compile(loss='binary_crossentropy', optimizer = 'adam', metrics = ['accuracy'])
-    #model.compile(loss='binary_crossentropy', optimizer = sgd, metrics = ['accuracy'])
+    sgd = SGD(lr = 0.009, decay = 1e-6, momentum = 0.9, nesterov = True)
+    model.compile(loss='binary_crossentropy', optimizer = sgd, metrics = ['accuracy'])
   
     return model
 
@@ -43,6 +42,15 @@ def create_truth_output(raw_data):
     y_train = y_train.reshape((len(y_train), 1))
 
     return y_train
+
+def datagen(path, length, number_tracks, jet_parameters_requested, tracks_requested):
+    raw_data = pd.read_hdf(path, start = 0, stop = length)
+    x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
+    y_train = create_truth_output(raw_data)
+    print(x_train.shape)
+    print(y_train.shape)
+
+    return (x_train, y_train)
 
 def main(argv):
 
@@ -59,6 +67,7 @@ def main(argv):
 
     #datafile = '/shome/phwindis/data/matched/1.h5'
     datafile = '/scratch/snx3000/phwindis/matched/1.h5'
+    datafile_val = '/scratch/snx3000/phwindis/matched/3.h5'
 
     # read in training data
     with pd.HDFStore(datafile) as store:
@@ -75,20 +84,26 @@ def main(argv):
     print("max number of tracks is " + str(number_tracks))
 
     print("reading training data")
-    raw_data = pd.read_hdf(datafile, start = 0, stop = training_dataset_length)
+    #raw_data = pd.read_hdf(datafile, start = 0, stop = training_dataset_length)
 
     # create model
     model = RNN_classifier(args['number_nodes'], args['number_layers'], len(jet_parameters_requested))
 
     # build training input and output:
-    x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
-    y_train = create_truth_output(raw_data)
+    #x_train = create_track_list(raw_data, number_tracks, jet_parameters_requested, tracks_requested, ordered = True)
+    #y_train = create_truth_output(raw_data)
 
-    print(x_train.shape)
-    print(y_train.shape)
+    #print(x_train.shape)
+    #print(y_train.shape)
 
     print("start training")
-    history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1000, shuffle = True)
+    #history = model.fit(x_train, y_train, validation_split = 0.20, nb_epoch = number_epochs, batch_size = 1000, shuffle = True)
+    history = model.fit_generator(datagen(datafile, 1000, number_tracks, jet_parameters_requested, tracks_requested),
+                                  samples_per_epoch = 10,
+                                  nb_epoch = 10,
+                                  verbose = 2,
+                                  validation_data = datagen(datafile_val, 1000, number_tracks, jet_parameters_requested, tracks_requested),
+                                  nb_val_samples = 10)
 
     # process the training and validation loss histories
     fig = plt.figure(figsize=(10,6))
