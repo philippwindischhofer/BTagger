@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # for local testing
-JOB_ID=LSTM128-1-2
+JOB_ID=generator_test
 JOB_DESC="trains a 128/1 LSTM with all track parameters, 150000 as training set length, 1000 epochs, batch size = 1000, SGD, LR = 0.009, decay = 1e-6, momentum = 0.9"
 
 # for saving the output
